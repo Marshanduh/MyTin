@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04A9DDFF2C01F04900DE1CF5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9DDFE2C01F04900DE1CF5 /* ProfileView.swift */; };
+		04F044DE2C0860BE00989304 /* FormPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F044DD2C0860BE00989304 /* FormPage.swift */; };
 		08A741562C015E860053A41A /* OnboardingMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A741552C015E860053A41A /* OnboardingMainView.swift */; };
 		08A741582C015FDE0053A41A /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A741572C015FDE0053A41A /* OnboardingModel.swift */; };
 		08A7415A2C0160DA0053A41A /* OnboardingMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A741592C0160DA0053A41A /* OnboardingMainViewModel.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		04A9DDFE2C01F04900DE1CF5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = SOURCE_ROOT; };
+		04F044DD2C0860BE00989304 /* FormPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPage.swift; sourceTree = "<group>"; };
 		08A741552C015E860053A41A /* OnboardingMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMainView.swift; sourceTree = "<group>"; };
 		08A741572C015FDE0053A41A /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		08A741592C0160DA0053A41A /* OnboardingMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMainViewModel.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				B68825AE2BFF98BB00C6EC1C /* Destinations */,
 				B66D5A5F2C01B61400536FEF /* Helper */,
 				B67572D22C03540C00233CD8 /* Maps */,
+				04F044DD2C0860BE00989304 /* FormPage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				B67572D42C03548100233CD8 /* UserLocationViewModel.swift in Sources */,
 				B67572CF2C032FAC00233CD8 /* TripCard.swift in Sources */,
 				B68825BC2BFFA9BB00C6EC1C /* ToDo.swift in Sources */,
+				04F044DE2C0860BE00989304 /* FormPage.swift in Sources */,
 				B67AB8392BFAE3C7006F010E /* ContentView.swift in Sources */,
 				B68825BA2BFFA9AF00C6EC1C /* Destination.swift in Sources */,
 				08A7415E2C01733B0053A41A /* OnboardingItemView.swift in Sources */,
