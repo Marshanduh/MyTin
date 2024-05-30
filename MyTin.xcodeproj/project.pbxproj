@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04A9DDFF2C01F04900DE1CF5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9DDFE2C01F04900DE1CF5 /* ProfileView.swift */; };
+		04ACBF532C08372300AD9E31 /* ProfileEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACBF522C08372300AD9E31 /* ProfileEdit.swift */; };
 		08A741562C015E860053A41A /* OnboardingMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A741552C015E860053A41A /* OnboardingMainView.swift */; };
 		08A741582C015FDE0053A41A /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A741572C015FDE0053A41A /* OnboardingModel.swift */; };
 		08A7415A2C0160DA0053A41A /* OnboardingMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A741592C0160DA0053A41A /* OnboardingMainViewModel.swift */; };
@@ -31,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		04A9DDFE2C01F04900DE1CF5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = SOURCE_ROOT; };
+		04ACBF522C08372300AD9E31 /* ProfileEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEdit.swift; sourceTree = SOURCE_ROOT; };
+		04ACBF542C083AD200AD9E31 /* MyTin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyTin.entitlements; sourceTree = "<group>"; };
 		08A741552C015E860053A41A /* OnboardingMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMainView.swift; sourceTree = "<group>"; };
 		08A741572C015FDE0053A41A /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		08A741592C0160DA0053A41A /* OnboardingMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMainViewModel.swift; sourceTree = "<group>"; };
@@ -95,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				04A9DDFE2C01F04900DE1CF5 /* ProfileView.swift */,
+				04ACBF522C08372300AD9E31 /* ProfileEdit.swift */,
 			);
 			path = Profiles;
 			sourceTree = "<group>";
@@ -118,6 +122,7 @@
 		B67AB8352BFAE3C7006F010E /* MyTin */ = {
 			isa = PBXGroup;
 			children = (
+				04ACBF542C083AD200AD9E31 /* MyTin.entitlements */,
 				B67AB8362BFAE3C7006F010E /* MyTinApp.swift */,
 				B6D64B312BFB91A700E37B7E /* Views */,
 				B6D64B322BFB91B200E37B7E /* Models */,
@@ -290,6 +295,7 @@
 				B68825BC2BFFA9BB00C6EC1C /* ToDo.swift in Sources */,
 				B67AB8392BFAE3C7006F010E /* ContentView.swift in Sources */,
 				B68825BA2BFFA9AF00C6EC1C /* Destination.swift in Sources */,
+				04ACBF532C08372300AD9E31 /* ProfileEdit.swift in Sources */,
 				08A7415E2C01733B0053A41A /* OnboardingItemView.swift in Sources */,
 				04A9DDFF2C01F04900DE1CF5 /* ProfileView.swift in Sources */,
 				B67AB8372BFAE3C7006F010E /* MyTinApp.swift in Sources */,
@@ -429,9 +435,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyTin/MyTin.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyTin/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -446,6 +455,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-sampleCode.MyTin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,9 +467,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyTin/MyTin.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyTin/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -474,6 +487,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-sampleCode.MyTin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
