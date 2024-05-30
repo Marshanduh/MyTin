@@ -12,6 +12,10 @@ import SwiftUI
 class OnboardingMainViewModel: ObservableObject {
     @Published var onboardingData: [OnboardingModel] = []
     
+    init (){
+        fillData()
+    }
+    
     func fillData(){
         onboardingData = [
 //            First On Boarding
