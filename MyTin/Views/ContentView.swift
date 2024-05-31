@@ -5,40 +5,52 @@
 //  Created by Marshanda Gwie on 20/05/24.
 //
 
+//hahahihi
+
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            TopBar()
-            
-            Spacer()
+        NavigationView {
+            ZStack {
+                HomePage()
+                VStack {
+                    TopBar()
+                    Spacer()
+                }
+            }
+            .navigationBarHidden(true) // Sembunyikan NavigationBar default
         }
-        
     }
 }
 
 struct TopBar: View {
     var body: some View {
         VStack(spacing: 20){
-            HStack{
-                CircleImage(image: Image("Satoru Gojo"))
-                VStack(alignment: .leading){
-                    Text("Nama")
-                        .font(.subheadline)
-                    Text(getGreeting())
-                        .font(.headline)
+            NavigationLink(destination: ProfileView(image: Image("Gojo Satoru"))) {
+                HStack{
+                    CircleImage(image: Image("Satoru Gojo"))
+                    VStack(alignment: .leading){
+                        Text("Gojo Satoru")
+                            .font(.subheadline)
+                            .foregroundColor(.black)
+                        Text(getGreeting())
+                            .font(.headline)
+                            .foregroundColor(.black)
+                    }
+                    Spacer()
+                    
                 }
-                Spacer()
+                .padding()
+                .padding(.top, 40)
             }
-            .padding()
-            .padding(.top, 40)
+            
         }
         .padding()
         .background(Color(red: 202 / 255, green: 240 / 255, blue: 248 / 255))
         .clipShape(BottomRoundedCorners(radius: 30, corners: [.bottomLeft, .bottomRight]))
-        . edgesIgnoringSafeArea ( .all )
-        
+        .edgesIgnoringSafeArea(.all)
     }
 }
 

@@ -10,17 +10,27 @@ import SwiftUI
 struct OnboardingMainView: View {
     @StateObject var viewModel =
         OnboardingMainViewModel()
-    @State private var onboardingIndex = 0
+    @State private var currentIndex: Int = 1
+    
     var body: some View {
-        OnboardingSliderView(index: $onboardingIndex){
+        OnboardingSliderView(index: $currentIndex){
             ForEach(viewModel.onboardingData){
-                item in
-            OnboardingItemView(data: item)
+                data in
+            OnboardingItemView(data: data)
             }
         }
         .environmentObject(viewModel)
+        .onAppear(){
+            viewModel.fillData()
+        }
     }
+//    Button(action: {
+//        
+//    }){
+//        
+//    }
 }
+
 
 #Preview {
     OnboardingMainView()

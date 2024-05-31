@@ -10,7 +10,7 @@ import SwiftUI
 
 struct CircleImage: View {
     var image: Image
-    var size: CGFloat = 65 // Tambahkan ukuran default
+    var size: CGFloat = 60 // Tambahkan ukuran default
 
     var body: some View {
         image

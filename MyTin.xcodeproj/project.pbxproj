@@ -14,9 +14,14 @@
 		08A7415A2C0160DA0053A41A /* OnboardingMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A741592C0160DA0053A41A /* OnboardingMainViewModel.swift */; };
 		08A7415C2C0164EB0053A41A /* OnboardingSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7415B2C0164EB0053A41A /* OnboardingSliderView.swift */; };
 		08A7415E2C01733B0053A41A /* OnboardingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7415D2C01733B0053A41A /* OnboardingItemView.swift */; };
+		B610F64C2C04B65A0063486E /* TripPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B610F64B2C04B65A0063486E /* TripPage.swift */; };
+		B610F64E2C04B67F0063486E /* TripRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B610F64D2C04B67F0063486E /* TripRow.swift */; };
 		B66D5A622C01B69E00536FEF /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D5A612C01B69E00536FEF /* HomePage.swift */; };
 		B66D5A662C01BC6200536FEF /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D5A652C01BC6200536FEF /* CircleImage.swift */; };
 		B66D5A6A2C01C79900536FEF /* BottomRoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D5A692C01C79900536FEF /* BottomRoundedCorners.swift */; };
+		B67572CF2C032FAC00233CD8 /* TripCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67572CE2C032FAC00233CD8 /* TripCard.swift */; };
+		B67572D12C0341A700233CD8 /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67572D02C0341A700233CD8 /* UserLocation.swift */; };
+		B67572D42C03548100233CD8 /* UserLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67572D32C03548100233CD8 /* UserLocationViewModel.swift */; };
 		B67AB8372BFAE3C7006F010E /* MyTinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67AB8362BFAE3C7006F010E /* MyTinApp.swift */; };
 		B67AB8392BFAE3C7006F010E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67AB8382BFAE3C7006F010E /* ContentView.swift */; };
 		B67AB83B2BFAE3C8006F010E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B67AB83A2BFAE3C8006F010E /* Assets.xcassets */; };
@@ -34,14 +39,20 @@
 		04A9DDFE2C01F04900DE1CF5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = SOURCE_ROOT; };
 		04ACBF522C08372300AD9E31 /* ProfileEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEdit.swift; sourceTree = SOURCE_ROOT; };
 		04ACBF542C083AD200AD9E31 /* MyTin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyTin.entitlements; sourceTree = "<group>"; };
+		04F044DD2C0860BE00989304 /* FormPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPage.swift; sourceTree = "<group>"; };
 		08A741552C015E860053A41A /* OnboardingMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMainView.swift; sourceTree = "<group>"; };
 		08A741572C015FDE0053A41A /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		08A741592C0160DA0053A41A /* OnboardingMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMainViewModel.swift; sourceTree = "<group>"; };
 		08A7415B2C0164EB0053A41A /* OnboardingSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSliderView.swift; sourceTree = "<group>"; };
 		08A7415D2C01733B0053A41A /* OnboardingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItemView.swift; sourceTree = "<group>"; };
+		B610F64B2C04B65A0063486E /* TripPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripPage.swift; sourceTree = "<group>"; };
+		B610F64D2C04B67F0063486E /* TripRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRow.swift; sourceTree = "<group>"; };
 		B66D5A612C01B69E00536FEF /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		B66D5A652C01BC6200536FEF /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		B66D5A692C01C79900536FEF /* BottomRoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomRoundedCorners.swift; sourceTree = "<group>"; };
+		B67572CE2C032FAC00233CD8 /* TripCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCard.swift; sourceTree = "<group>"; };
+		B67572D02C0341A700233CD8 /* UserLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocation.swift; sourceTree = "<group>"; };
+		B67572D32C03548100233CD8 /* UserLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationViewModel.swift; sourceTree = "<group>"; };
 		B67AB8332BFAE3C7006F010E /* MyTin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B67AB8362BFAE3C7006F010E /* MyTinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTinApp.swift; sourceTree = "<group>"; };
 		B67AB8382BFAE3C7006F010E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,6 +92,9 @@
 		B66D5A5E2C01B60C00536FEF /* Trips */ = {
 			isa = PBXGroup;
 			children = (
+				B67572CE2C032FAC00233CD8 /* TripCard.swift */,
+				B610F64B2C04B65A0063486E /* TripPage.swift */,
+				B610F64D2C04B67F0063486E /* TripRow.swift */,
 			);
 			path = Trips;
 			sourceTree = "<group>";
@@ -101,6 +115,15 @@
 				04ACBF522C08372300AD9E31 /* ProfileEdit.swift */,
 			);
 			path = Profiles;
+			sourceTree = "<group>";
+		};
+		B67572D22C03540C00233CD8 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				B67572D02C0341A700233CD8 /* UserLocation.swift */,
+				B67572D32C03548100233CD8 /* UserLocationViewModel.swift */,
+			);
+			path = Maps;
 			sourceTree = "<group>";
 		};
 		B67AB82A2BFAE3C7006F010E = {
@@ -190,6 +213,8 @@
 				B68825AD2BFF98A900C6EC1C /* Days */,
 				B68825AE2BFF98BB00C6EC1C /* Destinations */,
 				B66D5A5F2C01B61400536FEF /* Helper */,
+				B67572D22C03540C00233CD8 /* Maps */,
+				04F044DD2C0860BE00989304 /* FormPage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -289,18 +314,24 @@
 				B68825BE2BFFA9D400C6EC1C /* Photo.swift in Sources */,
 				B66D5A662C01BC6200536FEF /* CircleImage.swift in Sources */,
 				B68825B62BFFA99300C6EC1C /* Trip.swift in Sources */,
+				B610F64C2C04B65A0063486E /* TripPage.swift in Sources */,
 				B68825C02BFFAA0E00C6EC1C /* ModelData.swift in Sources */,
 				08A741582C015FDE0053A41A /* OnboardingModel.swift in Sources */,
 				08A7415A2C0160DA0053A41A /* OnboardingMainViewModel.swift in Sources */,
+				B67572D42C03548100233CD8 /* UserLocationViewModel.swift in Sources */,
+				B67572CF2C032FAC00233CD8 /* TripCard.swift in Sources */,
 				B68825BC2BFFA9BB00C6EC1C /* ToDo.swift in Sources */,
+				04F044DE2C0860BE00989304 /* FormPage.swift in Sources */,
 				B67AB8392BFAE3C7006F010E /* ContentView.swift in Sources */,
 				B68825BA2BFFA9AF00C6EC1C /* Destination.swift in Sources */,
 				04ACBF532C08372300AD9E31 /* ProfileEdit.swift in Sources */,
 				08A7415E2C01733B0053A41A /* OnboardingItemView.swift in Sources */,
 				04A9DDFF2C01F04900DE1CF5 /* ProfileView.swift in Sources */,
+				B610F64E2C04B67F0063486E /* TripRow.swift in Sources */,
 				B67AB8372BFAE3C7006F010E /* MyTinApp.swift in Sources */,
 				B66D5A622C01B69E00536FEF /* HomePage.swift in Sources */,
 				08A7415C2C0164EB0053A41A /* OnboardingSliderView.swift in Sources */,
+				B67572D12C0341A700233CD8 /* UserLocation.swift in Sources */,
 				B68825B82BFFA9A000C6EC1C /* Day.swift in Sources */,
 				08A741562C015E860053A41A /* OnboardingMainView.swift in Sources */,
 				B66D5A6A2C01C79900536FEF /* BottomRoundedCorners.swift in Sources */,
@@ -443,6 +474,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to show it on the map";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -475,6 +507,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to show it on the map";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

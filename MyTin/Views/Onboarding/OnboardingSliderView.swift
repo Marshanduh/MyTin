@@ -17,24 +17,24 @@ struct OnboardingSliderView<Content>: View where Content: View {
     var body: some View {
         ZStack{
             VStack{
-                GeometryReader { geometery in
+                GeometryReader { geometry in
                     ScrollView(.horizontal, showsIndicators: false){
                         HStack(spacing: 0){
                             self.content()
-                                .frame(width: geometery.size.width, height: geometery.size.height)
+                                .frame(width: geometry.size.width, height: geometry.size.height)
                                 .clipped()
                         }
                     }//:SCROLL VIEW
-                    .content.offset(x: self.offset(in: geometery), y:0)
-                    .frame(width:geometery.size.width, alignment: .leading)
+                    .content.offset(x: self.offset(in: geometry), y:0)
+                    .frame(width:geometry.size.width, alignment: .leading)
                     .gesture(
                         DragGesture().onChanged { value in
                             self.dragging = true
-                            self.offset = -CGFloat(self.index) * geometery.size.width + value.translation.width
+                            self.offset = -CGFloat(self.index) * geometry.size.width + value.translation.width
                         }
                             .onEnded { value in
-                                let predictedEndOffset = -CGFloat(self.index) * geometery.size.width + value.predictedEndTranslation.width
-                                let predictedIndex = Int(round(predictedEndOffset / -geometery.size.width))
+                                let predictedEndOffset = -CGFloat(self.index) * geometry.size.width + value.predictedEndTranslation.width
+                                let predictedIndex = Int(round(predictedEndOffset / -geometry.size.width))
                                 self.index = self.clampedIndex(from: predictedIndex)
                                 withAnimation {
                                     self.dragging = false 
@@ -42,15 +42,21 @@ struct OnboardingSliderView<Content>: View where Content: View {
                             }
                     )
                 }//:GEOMETERY
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             }//:VSTACK
+            VStack {
+                Spacer()
+                
+            }
+            
         }//:ZSTACK
     }
     
-    private func offset(in geometery: GeometryProxy)-> CGFloat{
+    private func offset(in geometry: GeometryProxy)-> CGFloat{
         if self.dragging {
-            return max(min(self.offset, 0), -CGFloat(viewModel.onboardingData.count - 1) * geometery.size.width)
+            return max(min(self.offset, 0), -CGFloat(viewModel.onboardingData.count - 1) * geometry.size.width)
         } else{
-           return -CGFloat(self.index) * geometery.size.width
+           return -CGFloat(self.index) * geometry.size.width
         }
     }
     

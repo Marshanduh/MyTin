@@ -11,6 +11,7 @@ import Foundation
 // Kelas Trip
 class Trip {
     var tripName: String
+    var image: String
     var tripLocation: String
     var totalDays: Int
     var tripMap: String
@@ -19,8 +20,9 @@ class Trip {
     var arrivalTime: Date
     var tripStatus: TripStatus
 
-    init(tripName: String, tripLocation: String, totalDays: Int, tripMap: String, tripCreated: Date, tripStatus: TripStatus) {
+    init(tripName: String, image: String, tripLocation: String, totalDays: Int, tripMap: String, tripCreated: Date, tripStatus: TripStatus) {
         self.tripName = tripName
+        self.image = image
         self.tripLocation = tripLocation
         self.totalDays = totalDays
         self.tripMap = tripMap
