@@ -43,11 +43,22 @@ struct OnboardingSliderView<Content>: View where Content: View {
                     )
                 }//:GEOMETERY
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            }//:VSTACK
+            }//:VSTACK Onboarding Items
             VStack {
-                Spacer()
+//                Spacer()
+                PageControlView(index: $index, maxIndex: viewModel.onboardingData.isEmpty ? 0 : viewModel.onboardingData.count - 1){
+                    Circle()
+                        .fill(Color(uiColor: .label))
+                        .frame(width: 8, height: 8)
+                }deselectedShape: {
+                    Circle()
+                        .fill(Color(uiColor: .secondaryLabel))
+                        .frame(width: 8, height: 8)
+                }
+//                Spacer()
+                    .frame(height: 80)
                 
-            }
+            }//: VSTACK OBOARDING PAGE CONTROL
             
         }//:ZSTACK
     }
