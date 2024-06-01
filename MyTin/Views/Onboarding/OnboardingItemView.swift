@@ -40,9 +40,12 @@ struct OnboardingItemView: View {
                 
                 Spacer()
             }
-            let color = UIColor(named: "White")
-            
-            Button (action: {}, label: {
+            VStack{
+                Spacer()
+                Button(action: {
+                    print("Navigate")
+                }, label: {
+                let color = UIColor(named: "White")
                 Text("Next")
                     .fontWeight(.semibold)
                     .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: .infinity)
@@ -51,16 +54,11 @@ struct OnboardingItemView: View {
                     .background(Color(.color1))
                     .cornerRadius(10)
                     .padding(.horizontal, 16)
-                    .padding(.top, 600)
-            })
-            
-//            .cornerRadius(10)
-//            .padding(.horizontal, 20)
+                    .padding(.bottom, 110)
+                })
+            }
         }
         .foregroundStyle(Color.primary)
     }
 }
 
-//#Preview {
-//    OnboardingItemView()
-//}

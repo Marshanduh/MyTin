@@ -23,8 +23,10 @@ struct OnboardingMainView: View {
         .onAppear(){
             viewModel.fillData()
         }
+        
     }
 }
+
 
 
 #Preview {

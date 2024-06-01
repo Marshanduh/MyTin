@@ -50,6 +50,7 @@ struct OnboardingSliderView<Content>: View where Content: View {
                     Circle()
                         .fill(Color(uiColor: .label))
                         .frame(width: 8, height: 8)
+                        .shadow(color: .gray, radius: 5)
                 }deselectedShape: {
                     Circle()
                         .fill(Color(uiColor: .secondaryLabel))
