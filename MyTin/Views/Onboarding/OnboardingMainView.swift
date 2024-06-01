@@ -24,11 +24,6 @@ struct OnboardingMainView: View {
             viewModel.fillData()
         }
     }
-//    Button(action: {
-//        
-//    }){
-//        
-//    }
 }
 
 
