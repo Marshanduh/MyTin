@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0812AFF72C08391D00CA69DC /* PageControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0812AFF62C08391D00CA69DC /* PageControlView.swift */; };
+		08850BC02C0BB9B8009EE86C /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08850BBF2C0BB9B8009EE86C /* ContainerView.swift */; };
+		08850BC22C0BBA42009EE86C /* SplashLaunchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08850BC12C0BBA42009EE86C /* SplashLaunchApp.swift */; };
+		08850BC42C0C0157009EE86C /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08850BC32C0C0157009EE86C /* SplashScreenView.swift */; };
 		08A741562C015E860053A41A /* OnboardingMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A741552C015E860053A41A /* OnboardingMainView.swift */; };
 		08A741582C015FDE0053A41A /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A741572C015FDE0053A41A /* OnboardingModel.swift */; };
 		08A7415A2C0160DA0053A41A /* OnboardingMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A741592C0160DA0053A41A /* OnboardingMainViewModel.swift */; };
@@ -28,6 +31,9 @@
 
 /* Begin PBXFileReference section */
 		0812AFF62C08391D00CA69DC /* PageControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlView.swift; sourceTree = "<group>"; };
+		08850BBF2C0BB9B8009EE86C /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		08850BC12C0BBA42009EE86C /* SplashLaunchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashLaunchApp.swift; sourceTree = "<group>"; };
+		08850BC32C0C0157009EE86C /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		08A741552C015E860053A41A /* OnboardingMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMainView.swift; sourceTree = "<group>"; };
 		08A741572C015FDE0053A41A /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		08A741592C0160DA0053A41A /* OnboardingMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMainViewModel.swift; sourceTree = "<group>"; };
@@ -58,6 +64,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08850BBC2C0BB90D009EE86C /* ScreenLaunch */ = {
+			isa = PBXGroup;
+			children = (
+				08850BBF2C0BB9B8009EE86C /* ContainerView.swift */,
+				08850BC12C0BBA42009EE86C /* SplashLaunchApp.swift */,
+				08850BC32C0C0157009EE86C /* SplashScreenView.swift */,
+			);
+			path = ScreenLaunch;
+			sourceTree = "<group>";
+		};
 		08A741542C011A420053A41A /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +182,7 @@
 		B6D64B312BFB91A700E37B7E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				08850BBC2C0BB90D009EE86C /* ScreenLaunch */,
 				B67AB8382BFAE3C7006F010E /* ContentView.swift */,
 				08A741542C011A420053A41A /* Onboarding */,
 				B68825B22BFF993A00C6EC1C /* Forms */,
@@ -280,9 +297,12 @@
 				B68825BC2BFFA9BB00C6EC1C /* ToDo.swift in Sources */,
 				B67AB8392BFAE3C7006F010E /* ContentView.swift in Sources */,
 				B68825BA2BFFA9AF00C6EC1C /* Destination.swift in Sources */,
+				08850BC02C0BB9B8009EE86C /* ContainerView.swift in Sources */,
 				08A7415E2C01733B0053A41A /* OnboardingItemView.swift in Sources */,
 				B67AB8372BFAE3C7006F010E /* MyTinApp.swift in Sources */,
+				08850BC42C0C0157009EE86C /* SplashScreenView.swift in Sources */,
 				08A7415C2C0164EB0053A41A /* OnboardingSliderView.swift in Sources */,
+				08850BC22C0BBA42009EE86C /* SplashLaunchApp.swift in Sources */,
 				B68825B82BFFA9A000C6EC1C /* Day.swift in Sources */,
 				08A741562C015E860053A41A /* OnboardingMainView.swift in Sources */,
 				B68825B42BFFA98000C6EC1C /* User.swift in Sources */,
