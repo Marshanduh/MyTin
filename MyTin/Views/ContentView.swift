@@ -28,7 +28,7 @@ struct ContentView: View {
 struct TopBar: View {
     var body: some View {
         VStack(spacing: 20){
-            NavigationLink(destination: ProfileView(image: Image("Gojo Satoru"))) {
+            NavigationLink(destination: ProfileView()) {
                 HStack{
                     CircleImage(image: Image("Satoru Gojo"))
                     VStack(alignment: .leading){

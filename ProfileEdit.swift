@@ -8,34 +8,17 @@
 import SwiftUI
 
 struct ProfileEdit: View {
-    @State var user : User
+    @Binding var user: User
+    @Binding var isEditing: Bool
+    
+    private var originalProfile: User
+    
+    init(profile: Binding<User>, isEditing: Binding<Bool>) {
+        _user = profile
+        _isEditing = isEditing
+        originalProfile = profile.wrappedValue // Store the original data
+    }
     var body: some View {
-        HStack {
-            NavigationLink(destination: ProfileView(user: user)) {
-                ZStack {
-                    Rectangle()
-                        .foregroundColor(.black)
-                        .frame(width: 40, height: 40)
-                        .cornerRadius(15)
-                    Image(systemName: "arrow.left")
-                        .font(.title)
-                        .foregroundColor(.white)
-                }
-            }
-            .padding()
-            Spacer()
-            
-            Text("Profile edit")
-                .font(.headline)
-            Spacer()
-            
-            NavigationLink(destination: ProfileView(user: user)) {
-                Text("Done")
-                    .font(.headline)
-                    .foregroundColor(.black)
-            }
-        }
-        .padding(.trailing, 15)
         Form{
             Text("Your name")
             TextField("new name", text: $user.name)
@@ -51,7 +34,19 @@ struct ProfileEdit: View {
                 .border(Color.gray)
             
         }
-        .navigationBarBackButtonHidden(true)
+        .navigationBarTitle("Edit Profile", displayMode: .inline)
+        .navigationBarBackButtonHidden(true) // Hide default back button
+        .navigationBarItems(leading: backButton)
+        
     }
+    
+    private var backButton: some View {
+        Button(action: {
+            // Handle custom back button action (navigate back to ProfileHost)
+            isEditing = false // Exit edit mode if needed
+        }) {
+            Image(systemName: "arrow.left")
+        }
+    }
+    
 }
-
