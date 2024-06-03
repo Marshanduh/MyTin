@@ -14,6 +14,7 @@ struct ProfileView: View {
         VStack {
             if isEditing {
                 ProfileEdit(profile: $profile, isEditing: $isEditing)
+                    .navigationBarBackButtonHidden(true)
             } else {
                 Profile(user: profile)
             }
