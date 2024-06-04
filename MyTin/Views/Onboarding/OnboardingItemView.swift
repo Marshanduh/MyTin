@@ -46,7 +46,7 @@ struct OnboardingItemView: View {
                     print("Navigate")
                 }, label: {
                 let color = UIColor(named: "White")
-                Text("Next")
+                Text("Skip")
                     .fontWeight(.semibold)
                     .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: .infinity)
                     .padding()
