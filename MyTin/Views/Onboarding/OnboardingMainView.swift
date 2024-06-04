@@ -19,6 +19,7 @@ struct OnboardingMainView: View {
             OnboardingItemView(data: data)
             }
         }
+        
         .environmentObject(viewModel)
         .onAppear(){
             viewModel.fillData()
