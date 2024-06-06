@@ -37,10 +37,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04A9DDFE2C01F04900DE1CF5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = SOURCE_ROOT; };
-		04ACBF522C08372300AD9E31 /* ProfileEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEdit.swift; sourceTree = SOURCE_ROOT; };
+		04A9DDFE2C01F04900DE1CF5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = MyTin/Views/profiles/ProfileView.swift; sourceTree = SOURCE_ROOT; };
+		04ACBF522C08372300AD9E31 /* ProfileEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileEdit.swift; path = MyTin/Views/profiles/ProfileEdit.swift; sourceTree = SOURCE_ROOT; };
 		04ACBF542C083AD200AD9E31 /* MyTin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyTin.entitlements; sourceTree = "<group>"; };
-		04ACBF552C0CB14600AD9E31 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = SOURCE_ROOT; };
+		04ACBF552C0CB14600AD9E31 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Profile.swift; path = MyTin/Views/profiles/Profile.swift; sourceTree = SOURCE_ROOT; };
 		04F044DD2C0860BE00989304 /* FormPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPage.swift; sourceTree = "<group>"; };
 		08A741552C015E860053A41A /* OnboardingMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMainView.swift; sourceTree = "<group>"; };
 		08A741572C015FDE0053A41A /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
@@ -80,6 +80,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04ACBF572C11708700AD9E31 /* profiles */ = {
+			isa = PBXGroup;
+			children = (
+				04A9DDFE2C01F04900DE1CF5 /* ProfileView.swift */,
+				04ACBF522C08372300AD9E31 /* ProfileEdit.swift */,
+				04ACBF552C0CB14600AD9E31 /* Profile.swift */,
+			);
+			path = profiles;
+			sourceTree = "<group>";
+		};
 		08A741542C011A420053A41A /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,14 +120,11 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
-		B66D5A602C01B66800536FEF /* Profiles */ = {
+		B66D5A602C01B66800536FEF /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				04A9DDFE2C01F04900DE1CF5 /* ProfileView.swift */,
-				04ACBF522C08372300AD9E31 /* ProfileEdit.swift */,
-				04ACBF552C0CB14600AD9E31 /* Profile.swift */,
 			);
-			path = Profiles;
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		B67572D22C03540C00233CD8 /* Maps */ = {
@@ -205,9 +212,10 @@
 		B6D64B312BFB91A700E37B7E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				04ACBF572C11708700AD9E31 /* profiles */,
 				B67AB8382BFAE3C7006F010E /* ContentView.swift */,
 				B66D5A612C01B69E00536FEF /* HomePage.swift */,
-				B66D5A602C01B66800536FEF /* Profiles */,
+				B66D5A602C01B66800536FEF /* Profile */,
 				B66D5A5E2C01B60C00536FEF /* Trips */,
 				08A741542C011A420053A41A /* Onboarding */,
 				B68825B22BFF993A00C6EC1C /* Forms */,
