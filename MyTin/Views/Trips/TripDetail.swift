@@ -51,13 +51,14 @@ struct TripDetail: View {
                 
                 Divider()
                 
-                NavigationLink(destination: DayDetail()) {
-                    DayBoard()
-                        .padding(.horizontal, 16)
-                        .padding(.vertical, 12)
+                ForEach(trip.days) { day in
+                    NavigationLink(destination: DayDetail(day: day)) {
+                        DayBoard(day: day)
+                            .padding(.horizontal, 16)
+                            .padding(.vertical, 12)
+                    }
+                    .foregroundColor(.black)
                 }
-                .foregroundColor(.black)
-                
             }
             Spacer()
         }
@@ -85,9 +86,37 @@ struct TripDetail: View {
         totalDays: 7,
         tripMap: "35.6762, 139.6503",
         tripCreated: Date(),
-        arrivalTime: Date().addingTimeInterval(-86400 * 2), // 2 days ago
-        tripStatus: .completed
+        arrivalTime: Date(),
+        tripStatus: .completed,
+        days: [
+            Day(
+                dayNumber: 1,
+                date: Date(),
+                destinations: [
+                    Destination(
+                        name: "Shibuya Crossing",
+                        address: "Shibuya, Tokyo, Japan",
+                        toDoList: [
+                            ToDo(task: "Take a photo", isDone: true),
+                            ToDo(task: "Visit Hachiko statue", isDone: true)
+                        ],
+                        isVisited: true
+                    ),
+                    Destination(
+                        name: "Tokyo Tower",
+                        address: "4 Chome-2-8 Shibakoen, Minato City, Tokyo, Japan",
+                        toDoList: [
+                            ToDo(task: "Go to the top", isDone: false),
+                            ToDo(task: "Buy a souvenir", isDone: false)
+                        ],
+                        isVisited: false
+                    )
+                ],
+                isFinished: false
+            )
+        ]
     )
     return TripDetail(trip: sampleTrip)
 }
+
 

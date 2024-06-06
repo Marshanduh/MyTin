@@ -228,13 +228,6 @@
 			path = Albums;
 			sourceTree = "<group>";
 		};
-		B68825B22BFF993A00C6EC1C /* Forms */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Forms;
-			sourceTree = "<group>";
-		};
 		B6D64B312BFB91A700E37B7E /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,7 +241,6 @@
 				B68825AD2BFF98A900C6EC1C /* Days */,
 				08A741542C011A420053A41A /* Onboarding */,
 				B64BCBDC2C1207A600425641 /* Form */,
-				B68825B22BFF993A00C6EC1C /* Forms */,
 				B68825B12BFF990300C6EC1C /* Albums */,
 				B68825AF2BFF98C500C6EC1C /* ToDoLists */,
 				B66D5A5F2C01B61400536FEF /* Helper */,

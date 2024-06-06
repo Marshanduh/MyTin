@@ -41,7 +41,7 @@ struct TripRow: View {
 }
 
 #Preview {
-    TripRow(trip: Trip(
+    let sampleTrip = Trip(
         tripName: "Tokyo",
         image: UIImage(named: "Tokyo"),
         tripLocation: "Tokyo, Japan",
@@ -49,6 +49,34 @@ struct TripRow: View {
         tripMap: "35.6762, 139.6503",
         tripCreated: Date(),
         arrivalTime: Date(),
-        tripStatus: .completed
-    ))
+        tripStatus: .completed,
+        days: [
+            Day(
+                dayNumber: 1,
+                date: Date(),
+                destinations: [
+                    Destination(
+                        name: "Shibuya Crossing",
+                        address: "Shibuya, Tokyo, Japan",
+                        toDoList: [
+                            ToDo(task: "Take a photo", isDone: true),
+                            ToDo(task: "Visit Hachiko statue", isDone: true)
+                        ],
+                        isVisited: true
+                    ),
+                    Destination(
+                        name: "Tokyo Tower",
+                        address: "4 Chome-2-8 Shibakoen, Minato City, Tokyo, Japan",
+                        toDoList: [
+                            ToDo(task: "Go to the top", isDone: false),
+                            ToDo(task: "Buy a souvenir", isDone: false)
+                        ],
+                        isVisited: false
+                    )
+                ],
+                isFinished: false
+            )
+        ]
+    )
+    return TripRow(trip: sampleTrip)
 }
