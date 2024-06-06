@@ -16,6 +16,11 @@
 		08A7415E2C01733B0053A41A /* OnboardingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7415D2C01733B0053A41A /* OnboardingItemView.swift */; };
 		B610F64C2C04B65A0063486E /* TripPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B610F64B2C04B65A0063486E /* TripPage.swift */; };
 		B610F64E2C04B67F0063486E /* TripRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B610F64D2C04B67F0063486E /* TripRow.swift */; };
+		B64D683E2C0F524C001CE960 /* TripDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64D683D2C0F524C001CE960 /* TripDetail.swift */; };
+		B64F81F92C108575005FD1F5 /* TestDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64F81F82C108575005FD1F5 /* TestDropDown.swift */; };
+		B64F81FB2C108C1F005FD1F5 /* DayBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64F81FA2C108C1F005FD1F5 /* DayBoard.swift */; };
+		B64F81FD2C10AE6B005FD1F5 /* DayDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64F81FC2C10AE6B005FD1F5 /* DayDetail.swift */; };
+		B64F81FF2C10C11B005FD1F5 /* DestinationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64F81FE2C10C11B005FD1F5 /* DestinationDetail.swift */; };
 		B66D5A622C01B69E00536FEF /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D5A612C01B69E00536FEF /* HomePage.swift */; };
 		B66D5A662C01BC6200536FEF /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D5A652C01BC6200536FEF /* CircleImage.swift */; };
 		B66D5A6A2C01C79900536FEF /* BottomRoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D5A692C01C79900536FEF /* BottomRoundedCorners.swift */; };
@@ -33,6 +38,9 @@
 		B68825BC2BFFA9BB00C6EC1C /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68825BB2BFFA9BB00C6EC1C /* ToDo.swift */; };
 		B68825BE2BFFA9D400C6EC1C /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68825BD2BFFA9D400C6EC1C /* Photo.swift */; };
 		B68825C02BFFAA0E00C6EC1C /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68825BF2BFFAA0E00C6EC1C /* ModelData.swift */; };
+		B69E68EB2C1139D7008F4226 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69E68EA2C1139D7008F4226 /* ImagePicker.swift */; };
+		B6D9F47C2C1181850092159A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9F47B2C1181850092159A /* Color.swift */; };
+		B6F325622C0EAFA300E04C31 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F325612C0EAFA300E04C31 /* TopBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +53,11 @@
 		08A7415D2C01733B0053A41A /* OnboardingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItemView.swift; sourceTree = "<group>"; };
 		B610F64B2C04B65A0063486E /* TripPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripPage.swift; sourceTree = "<group>"; };
 		B610F64D2C04B67F0063486E /* TripRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRow.swift; sourceTree = "<group>"; };
+		B64D683D2C0F524C001CE960 /* TripDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetail.swift; sourceTree = "<group>"; };
+		B64F81F82C108575005FD1F5 /* TestDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDropDown.swift; sourceTree = "<group>"; };
+		B64F81FA2C108C1F005FD1F5 /* DayBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayBoard.swift; sourceTree = "<group>"; };
+		B64F81FC2C10AE6B005FD1F5 /* DayDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetail.swift; sourceTree = "<group>"; };
+		B64F81FE2C10C11B005FD1F5 /* DestinationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationDetail.swift; sourceTree = "<group>"; };
 		B66D5A612C01B69E00536FEF /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		B66D5A652C01BC6200536FEF /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		B66D5A692C01C79900536FEF /* BottomRoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomRoundedCorners.swift; sourceTree = "<group>"; };
@@ -63,6 +76,9 @@
 		B68825BB2BFFA9BB00C6EC1C /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		B68825BD2BFFA9D400C6EC1C /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		B68825BF2BFFAA0E00C6EC1C /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		B69E68EA2C1139D7008F4226 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		B6D9F47B2C1181850092159A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		B6F325612C0EAFA300E04C31 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +109,7 @@
 				B67572CE2C032FAC00233CD8 /* TripCard.swift */,
 				B610F64B2C04B65A0063486E /* TripPage.swift */,
 				B610F64D2C04B67F0063486E /* TripRow.swift */,
+				B64D683D2C0F524C001CE960 /* TripDetail.swift */,
 			);
 			path = Trips;
 			sourceTree = "<group>";
@@ -102,6 +119,7 @@
 			children = (
 				B66D5A692C01C79900536FEF /* BottomRoundedCorners.swift */,
 				B66D5A652C01BC6200536FEF /* CircleImage.swift */,
+				B69E68EA2C1139D7008F4226 /* ImagePicker.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -144,7 +162,6 @@
 			children = (
 				B67AB8362BFAE3C7006F010E /* MyTinApp.swift */,
 				B6D64B312BFB91A700E37B7E /* Views */,
-				B6D64B322BFB91B200E37B7E /* Models */,
 				B6D64B332BFB91BF00E37B7E /* Resources */,
 				B67AB83A2BFAE3C8006F010E /* Assets.xcassets */,
 				B67AB83C2BFAE3C8006F010E /* Preview Content */,
@@ -163,6 +180,8 @@
 		B68825AD2BFF98A900C6EC1C /* Days */ = {
 			isa = PBXGroup;
 			children = (
+				B64F81FA2C108C1F005FD1F5 /* DayBoard.swift */,
+				B64F81FC2C10AE6B005FD1F5 /* DayDetail.swift */,
 			);
 			path = Days;
 			sourceTree = "<group>";
@@ -170,6 +189,7 @@
 		B68825AE2BFF98BB00C6EC1C /* Destinations */ = {
 			isa = PBXGroup;
 			children = (
+				B64F81FE2C10C11B005FD1F5 /* DestinationDetail.swift */,
 			);
 			path = Destinations;
 			sourceTree = "<group>";
@@ -200,17 +220,20 @@
 			children = (
 				B67AB8382BFAE3C7006F010E /* ContentView.swift */,
 				B66D5A612C01B69E00536FEF /* HomePage.swift */,
+				B6F325612C0EAFA300E04C31 /* TopBar.swift */,
+				B6D64B322BFB91B200E37B7E /* Models */,
 				B66D5A602C01B66800536FEF /* Profiles */,
 				B66D5A5E2C01B60C00536FEF /* Trips */,
+				B68825AE2BFF98BB00C6EC1C /* Destinations */,
+				B68825AD2BFF98A900C6EC1C /* Days */,
 				08A741542C011A420053A41A /* Onboarding */,
 				B68825B22BFF993A00C6EC1C /* Forms */,
 				B68825B12BFF990300C6EC1C /* Albums */,
 				B68825AF2BFF98C500C6EC1C /* ToDoLists */,
-				B68825AD2BFF98A900C6EC1C /* Days */,
-				B68825AE2BFF98BB00C6EC1C /* Destinations */,
 				B66D5A5F2C01B61400536FEF /* Helper */,
 				B67572D22C03540C00233CD8 /* Maps */,
 				04F044DD2C0860BE00989304 /* FormPage.swift */,
+				B64F81F82C108575005FD1F5 /* TestDropDown.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -233,6 +256,7 @@
 		B6D64B332BFB91BF00E37B7E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B6D9F47B2C1181850092159A /* Color.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -310,24 +334,32 @@
 				B68825BE2BFFA9D400C6EC1C /* Photo.swift in Sources */,
 				B66D5A662C01BC6200536FEF /* CircleImage.swift in Sources */,
 				B68825B62BFFA99300C6EC1C /* Trip.swift in Sources */,
+				B64F81FB2C108C1F005FD1F5 /* DayBoard.swift in Sources */,
 				B610F64C2C04B65A0063486E /* TripPage.swift in Sources */,
+				B6D9F47C2C1181850092159A /* Color.swift in Sources */,
 				B68825C02BFFAA0E00C6EC1C /* ModelData.swift in Sources */,
 				08A741582C015FDE0053A41A /* OnboardingModel.swift in Sources */,
 				08A7415A2C0160DA0053A41A /* OnboardingMainViewModel.swift in Sources */,
 				B67572D42C03548100233CD8 /* UserLocationViewModel.swift in Sources */,
 				B67572CF2C032FAC00233CD8 /* TripCard.swift in Sources */,
+				B64D683E2C0F524C001CE960 /* TripDetail.swift in Sources */,
 				B68825BC2BFFA9BB00C6EC1C /* ToDo.swift in Sources */,
 				04F044DE2C0860BE00989304 /* FormPage.swift in Sources */,
 				B67AB8392BFAE3C7006F010E /* ContentView.swift in Sources */,
+				B6F325622C0EAFA300E04C31 /* TopBar.swift in Sources */,
 				B68825BA2BFFA9AF00C6EC1C /* Destination.swift in Sources */,
 				08A7415E2C01733B0053A41A /* OnboardingItemView.swift in Sources */,
 				04A9DDFF2C01F04900DE1CF5 /* ProfileView.swift in Sources */,
+				B64F81FD2C10AE6B005FD1F5 /* DayDetail.swift in Sources */,
 				B610F64E2C04B67F0063486E /* TripRow.swift in Sources */,
 				B67AB8372BFAE3C7006F010E /* MyTinApp.swift in Sources */,
 				B66D5A622C01B69E00536FEF /* HomePage.swift in Sources */,
 				08A7415C2C0164EB0053A41A /* OnboardingSliderView.swift in Sources */,
+				B69E68EB2C1139D7008F4226 /* ImagePicker.swift in Sources */,
 				B67572D12C0341A700233CD8 /* UserLocation.swift in Sources */,
 				B68825B82BFFA9A000C6EC1C /* Day.swift in Sources */,
+				B64F81FF2C10C11B005FD1F5 /* DestinationDetail.swift in Sources */,
+				B64F81F92C108575005FD1F5 /* TestDropDown.swift in Sources */,
 				08A741562C015E860053A41A /* OnboardingMainView.swift in Sources */,
 				B66D5A6A2C01C79900536FEF /* BottomRoundedCorners.swift in Sources */,
 				B68825B42BFFA98000C6EC1C /* User.swift in Sources */,

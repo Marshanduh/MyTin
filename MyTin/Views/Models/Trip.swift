@@ -6,12 +6,12 @@
 //
 
 import Foundation
-
+import UIKit
 
 // Kelas Trip
 class Trip {
     var tripName: String
-    var image: String
+    var image: UIImage?
     var tripLocation: String
     var totalDays: Int
     var tripMap: String
@@ -20,7 +20,7 @@ class Trip {
     var arrivalTime: Date
     var tripStatus: TripStatus
 
-    init(tripName: String, image: String, tripLocation: String, totalDays: Int, tripMap: String, tripCreated: Date, tripStatus: TripStatus) {
+    init(tripName: String, image: UIImage?, tripLocation: String, totalDays: Int, tripMap: String, tripCreated: Date, arrivalTime: Date, tripStatus: TripStatus) {
         self.tripName = tripName
         self.image = image
         self.tripLocation = tripLocation
@@ -28,7 +28,7 @@ class Trip {
         self.tripMap = tripMap
         self.tripCreated = tripCreated
         self.daysOfStay = 0
-        self.arrivalTime = Date()
+        self.arrivalTime = arrivalTime
         self.tripStatus = tripStatus
     }
 
@@ -44,11 +44,6 @@ class Trip {
         self.arrivalTime = gpsData.timestamp
     }
     
-    
-    // apakah perlu ada function addDay?
-    
-    
-    
     // Enum untuk status perjalanan
     enum TripStatus {
         case completed
@@ -57,7 +52,6 @@ class Trip {
     }
 
     // Kelas GPSData untuk merepresentasikan data GPS
-    // Masih belum pasti cara implementasinya bagaimana
     class GPSData {
         var timestamp: Date
 
@@ -65,5 +59,5 @@ class Trip {
             self.timestamp = timestamp
         }
     }
-
 }
+

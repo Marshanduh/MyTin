@@ -8,45 +8,90 @@
 import SwiftUI
 
 struct HomePage: View {
+    var trips: [Trip] = [
+        Trip(
+            tripName: "Tokyo",
+            image: UIImage(named: "Tokyo"),
+            tripLocation: "Tokyo, Japan",
+            totalDays: 7,
+            tripMap: "35.6762, 139.6503",
+            tripCreated: Date(),
+            arrivalTime: Date(),
+            tripStatus: .completed
+        ),
+        Trip(
+            tripName: "San Francisco",
+            image: UIImage(named: "SanFrancisco"),
+            tripLocation: "San Francisco, USA",
+            totalDays: 5,
+            tripMap: "37.7749, -122.4194",
+            tripCreated: Date(),
+            arrivalTime: Date(),
+            tripStatus: .onGoing
+        )
+        // Add more Trip instances here
+    ]
+    
     var body: some View {
-        VStack (alignment: .leading) {
-            UserLocation()
-                .frame(height: 425)
-            
-            HStack {
-                Image(systemName: "mappin")
-                VStack (alignment: .leading) {
-                    Text("You're in San Jose")
-                    HStack {
-                        Text("See your itinerary in ")
-                        Image(systemName: "arrow.right")
-                            .font(.system(size: 12))
-                    }
+        ZStack {
+            ScrollView {
+                VStack(alignment: .leading) {
+                    UserLocation()
+                        .frame(height: 425)
                     
+//                    HStack {
+//                        Image(systemName: "mappin")
+//                        VStack(alignment: .leading) {
+//                            Text("You're in San Jose")
+//                            HStack {
+//                                NavigationLink(destination: TripDetail()) {
+//                                    Text("See your itinerary in San Jose")
+//                                    Image(systemName: "arrow.right")
+//                                        .font(.system(size: 12))
+//                                }
+//                                .foregroundColor(.black)
+//                            }
+//                        }
+//                    }
+//                    .padding()
+                    
+                    HStack {
+                        Text("Your Trip(s)")
+                            .font(.title)
+                            .fontWeight(.bold)
+                        Spacer()
+                        NavigationLink(destination: TripPage()) {
+                            Text("Show all")
+                                .foregroundColor(.gray)
+                        }
+                    }
+                    .padding([.leading, .trailing], 16)
+
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack {
+                            ForEach(trips, id: \.tripName) { trip in
+                                NavigationLink(destination: TripDetail(trip: trip)) {
+                                    TripCard(trip: trip)
+                                        .padding()
+                                }
+                                .foregroundColor(.black)
+                            }
+                        }
+                    }
                 }
-                
+                .padding(.top, 10) // Beri padding untuk mendorong konten ke bawah agar tidak tertutup TopBar
             }
-            .padding()
-            
-            Divider()
-            
-            HStack {
-                Text("Your Trip(s)")
-                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+
+            VStack {
+                TopBar()
                 Spacer()
-                Text("show all")
-                    .foregroundColor(.gray)
             }
-            .padding([.leading, .trailing], 16)
-            
-            TripCard().padding()
-            
         }
-        
+        .edgesIgnoringSafeArea(.top) // Mengabaikan area aman di bagian atas agar TopBar terintegrasi dengan baik
     }
 }
 
 #Preview {
     HomePage()
 }
+

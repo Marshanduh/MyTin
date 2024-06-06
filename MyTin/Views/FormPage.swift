@@ -6,6 +6,7 @@
 //
 import SwiftUI
 import MapKit
+import CoreLocation
 
 struct LocationSearchView: View {
     @Binding var region: MKCoordinateRegion
@@ -17,8 +18,35 @@ struct LocationSearchView: View {
             .edgesIgnoringSafeArea(.all)
             .onTapGesture {
                 self.location = "\(region.center.latitude), \(region.center.longitude)"
-                self.presentationMode.wrappedValue.dismiss()
+                self.getCityName(from: region.center)
             }
+    }
+    
+    private func getCityName(from coordinate: CLLocationCoordinate2D) {
+        let geocoder = CLGeocoder()
+        let location = CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude)
+        
+        geocoder.reverseGeocodeLocation(location) { (placemarks, error) in
+            if let error = error {
+                print("Error getting location: \(error.localizedDescription)")
+                return
+            }
+            
+            guard let placemark = placemarks?.first else {
+                print("No placemark found")
+                return
+            }
+            
+            if let city = placemark.locality {
+                self.location = city
+            } else if let administrativeArea = placemark.administrativeArea {
+                self.location = administrativeArea
+            } else if let country = placemark.country {
+                self.location = country
+            }
+            
+            self.presentationMode.wrappedValue.dismiss()
+        }
     }
 }
 
@@ -33,6 +61,8 @@ struct FormPage: View {
         center: CLLocationCoordinate2D(latitude: -7.250445, longitude: 112.768845),
         span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)
     )
+    @State private var selectedImage: UIImage? = nil
+    @State private var showingImagePicker = false
 
     var body: some View {
         NavigationView {
@@ -41,7 +71,7 @@ struct FormPage: View {
                     TextField("Enter your trip name", text: $tripName)
                         .padding(.all)
                 }
-                
+
                 Section(header: Text("Location")) {
                     HStack {
                         TextField("Enter location", text: $location)
@@ -50,17 +80,18 @@ struct FormPage: View {
                             self.showingMap = true
                         }) {
                             Image(systemName: "map")
+                                .foregroundColor(.customDarkBlue)
                         }
                     }
                     .sheet(isPresented: $showingMap) {
                         LocationSearchView(region: $region, location: $location)
                     }
                 }
-                
+
                 Section(header: Text("How Many Days")) {
                     Stepper("Days: \(Int(volumeSliderValue))", value: $volumeSliderValue, in: 0...365, step: 1)
                         .padding()
-                        .accentColor(Color.blue)
+                        .accentColor(.customDarkBlue)
                     Slider(value: $volumeSliderValue, in: 0...365, step: 1)
                         .padding()
                         .accentColor(Color.blue)
@@ -70,16 +101,48 @@ struct FormPage: View {
                     DatePicker("Pick a Date", selection: $date)
                 }
 
-                Button(action: {
-                        // Aksi ketika tombol konfirmasi ditekan
-                    }) {
-                        Text("Confirm")
-                            .frame(minWidth: 0, maxWidth: .infinity)
-                            .padding()
-                            .background(Color.blue)
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
+                Section(header: Text("Image")) {
+                    HStack {
+                        if let image = selectedImage {
+                            Image(uiImage: image)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 200)
+                        }
+                        Button(action: {
+                            self.showingImagePicker = true
+                        }) {
+                            Image(systemName: "photo")
+                                .foregroundColor(.blue)
+                        }
+                    }
+                    .sheet(isPresented: $showingImagePicker) {
+                        ImagePicker(image: $selectedImage)
+                    }
                 }
+
+                Button(action: {
+                    // Aksi ketika tombol konfirmasi ditekan
+                    let newTrip = Trip(
+                        tripName: tripName,
+                        image: selectedImage,
+                        tripLocation: location,
+                        totalDays: Int(volumeSliderValue),
+                        tripMap: "\(region.center.latitude), \(region.center.longitude)",
+                        tripCreated: Date(), // current time
+                        arrivalTime: date, // selected date
+                        tripStatus: .future // assuming the trip is always future when created
+                    )
+                    print(newTrip)
+                }) {
+                    Text("Confirm")
+                        .frame(minWidth: 0, maxWidth: .infinity)
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                
                 Section {
                     Button(action: {
                         print("Reset")
@@ -88,6 +151,7 @@ struct FormPage: View {
                         volumeSliderValue = 0
                         date = Date()
                         location = ""
+                        selectedImage = nil
                     }) {
                         Text("Reset to Default")
                     }
@@ -95,7 +159,6 @@ struct FormPage: View {
             }
             .navigationBarTitle("Plan a New Trip")
         }
-        
     }
 }
 
@@ -104,3 +167,4 @@ struct FormPage_Previews: PreviewProvider {
         FormPage()
     }
 }
+
