@@ -40,14 +40,25 @@ struct OnboardingItemView: View {
                 
                 Spacer()
             }
-            
-//            .cornerRadius(10)
-//            .padding(.horizontal, 20)
+            VStack{
+                Spacer()
+                Button(action: {
+                    print("Navigate")
+                }, label: {
+                let color = UIColor(named: "White")
+                Text("Skip")
+                    .fontWeight(.semibold)
+                    .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: .infinity)
+                    .padding()
+                    .foregroundStyle(.white)
+                    .background(Color(.color1))
+                    .cornerRadius(10)
+                    .padding(.horizontal, 16)
+                    .padding(.bottom, 110)
+                })
+            }
         }
         .foregroundStyle(Color.primary)
     }
 }
 
-//#Preview {
-//    OnboardingItemView()
-//}
