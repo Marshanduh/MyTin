@@ -40,6 +40,10 @@
 		B68825C02BFFAA0E00C6EC1C /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68825BF2BFFAA0E00C6EC1C /* ModelData.swift */; };
 		B69E68EB2C1139D7008F4226 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69E68EA2C1139D7008F4226 /* ImagePicker.swift */; };
 		B6D9F47C2C1181850092159A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9F47B2C1181850092159A /* Color.swift */; };
+		B6D9F47E2C11846D0092159A /* DestinationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9F47D2C11846D0092159A /* DestinationForm.swift */; };
+		B6D9F4802C1184A10092159A /* LocationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9F47F2C1184A10092159A /* LocationSearchView.swift */; };
+		B6D9F4832C1189BF0092159A /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9F4822C1189BF0092159A /* Profile.swift */; };
+		B6D9F4852C1189DC0092159A /* ProfileEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9F4842C1189DC0092159A /* ProfileEdit.swift */; };
 		B6F325622C0EAFA300E04C31 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F325612C0EAFA300E04C31 /* TopBar.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +82,10 @@
 		B68825BF2BFFAA0E00C6EC1C /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		B69E68EA2C1139D7008F4226 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		B6D9F47B2C1181850092159A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		B6D9F47D2C11846D0092159A /* DestinationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationForm.swift; sourceTree = "<group>"; };
+		B6D9F47F2C1184A10092159A /* LocationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchView.swift; sourceTree = "<group>"; };
+		B6D9F4822C1189BF0092159A /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		B6D9F4842C1189DC0092159A /* ProfileEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEdit.swift; sourceTree = "<group>"; };
 		B6F325612C0EAFA300E04C31 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				04A9DDFE2C01F04900DE1CF5 /* ProfileView.swift */,
+				B6D9F4822C1189BF0092159A /* Profile.swift */,
+				B6D9F4842C1189DC0092159A /* ProfileEdit.swift */,
 			);
 			path = Profiles;
 			sourceTree = "<group>";
@@ -234,6 +244,8 @@
 				B67572D22C03540C00233CD8 /* Maps */,
 				04F044DD2C0860BE00989304 /* FormPage.swift */,
 				B64F81F82C108575005FD1F5 /* TestDropDown.swift */,
+				B6D9F47D2C11846D0092159A /* DestinationForm.swift */,
+				B6D9F47F2C1184A10092159A /* LocationSearchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -354,12 +366,16 @@
 				B610F64E2C04B67F0063486E /* TripRow.swift in Sources */,
 				B67AB8372BFAE3C7006F010E /* MyTinApp.swift in Sources */,
 				B66D5A622C01B69E00536FEF /* HomePage.swift in Sources */,
+				B6D9F47E2C11846D0092159A /* DestinationForm.swift in Sources */,
 				08A7415C2C0164EB0053A41A /* OnboardingSliderView.swift in Sources */,
+				B6D9F4802C1184A10092159A /* LocationSearchView.swift in Sources */,
 				B69E68EB2C1139D7008F4226 /* ImagePicker.swift in Sources */,
 				B67572D12C0341A700233CD8 /* UserLocation.swift in Sources */,
 				B68825B82BFFA9A000C6EC1C /* Day.swift in Sources */,
 				B64F81FF2C10C11B005FD1F5 /* DestinationDetail.swift in Sources */,
 				B64F81F92C108575005FD1F5 /* TestDropDown.swift in Sources */,
+				B6D9F4852C1189DC0092159A /* ProfileEdit.swift in Sources */,
+				B6D9F4832C1189BF0092159A /* Profile.swift in Sources */,
 				08A741562C015E860053A41A /* OnboardingMainView.swift in Sources */,
 				B66D5A6A2C01C79900536FEF /* BottomRoundedCorners.swift in Sources */,
 				B68825B42BFFA98000C6EC1C /* User.swift in Sources */,

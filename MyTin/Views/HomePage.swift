@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomePage: View {
+    @Binding var user: User
+    
     var trips: [Trip] = [
         Trip(
             tripName: "Tokyo",
@@ -83,7 +85,7 @@ struct HomePage: View {
             }
 
             VStack {
-                TopBar()
+                TopBar(user: user)
                 Spacer()
             }
         }
@@ -92,6 +94,7 @@ struct HomePage: View {
 }
 
 #Preview {
-    HomePage()
+    HomePage(user: .constant(User(name: "Gojo Satoru", emailAddress: "gojo@example.com", phoneNumber: "081123456789", picture: "Satoru Gojo")))
 }
+
 
