@@ -6,21 +6,7 @@
 //
 import SwiftUI
 import MapKit
-
-struct LocationSearchView: View {
-    @Binding var region: MKCoordinateRegion
-    @Binding var location: String
-    @Environment(\.presentationMode) var presentationMode
-
-    var body: some View {
-        Map(coordinateRegion: $region)
-            .edgesIgnoringSafeArea(.all)
-            .onTapGesture {
-                self.location = "\(region.center.latitude), \(region.center.longitude)"
-                self.presentationMode.wrappedValue.dismiss()
-            }
-    }
-}
+import CoreLocation
 
 struct FormPage: View {
     @State var tripName: String = ""
@@ -50,20 +36,21 @@ struct FormPage: View {
                             self.showingMap = true
                         }) {
                             Image(systemName: "map")
+                                .foregroundColor(.customDarkBlue)
                         }
                     }
                     .sheet(isPresented: $showingMap) {
-                        LocationSearchView(region: $region, location: $location)
+                        LocationSearchView(region: $region, address: $location)
                     }
                 }
                 
                 Section(header: Text("How Many Days")) {
                     Stepper("Days: \(Int(volumeSliderValue))", value: $volumeSliderValue, in: 0...365, step: 1)
                         .padding()
-                        .accentColor(Color.blue)
+                        .accentColor(.customDarkBlue)
                     Slider(value: $volumeSliderValue, in: 0...365, step: 1)
                         .padding()
-                        .accentColor(Color.blue)
+                        .accentColor(.customDarkBlue)
                 }
 
                 Section(header: Text("Date")) {
@@ -71,31 +58,18 @@ struct FormPage: View {
                 }
 
                 Button(action: {
-                        // Aksi ketika tombol konfirmasi ditekan
+                        // Action to perform when the confirm button is clicked
                     }) {
                         Text("Confirm")
                             .frame(minWidth: 0, maxWidth: .infinity)
                             .padding()
-                            .background(Color.blue)
+                            .background(Color.customDarkBlue)
                             .foregroundColor(.white)
                             .cornerRadius(10)
-                }
-                Section {
-                    Button(action: {
-                        print("Reset")
-                        tripName = ""
-                        index = 0
-                        volumeSliderValue = 0
-                        date = Date()
-                        location = ""
-                    }) {
-                        Text("Reset to Default")
-                    }
                 }
             }
             .navigationBarTitle("Plan a New Trip")
         }
-        
     }
 }
 
