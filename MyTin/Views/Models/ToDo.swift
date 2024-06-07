@@ -8,12 +8,8 @@
 import Foundation
 
 // Kelas Todo untuk menampung tugas-tugas
-class Todo {
-    var description: String
-    var completed: Bool
-
-    init(description: String, completed: Bool = false) {
-        self.description = description
-        self.completed = completed
-    }
+struct ToDo: Identifiable {
+    var id = UUID()
+    var task: String
+    var isDone: Bool
 }

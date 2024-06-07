@@ -19,14 +19,4 @@ class User {
         self.phoneNumber = phoneNumber
         self.picture = picture
     }
-
-    
-    // Method to edit profile details
-//    func editProfile(name: String, emailAddress: String, phoneNumber: String, picture: String) {
-//        self.name = name
-//        self.emailAddress = emailAddress
-//        self.phoneNumber = phoneNumber
-//        self.picture = picture
-//    }
-    
 }

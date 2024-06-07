@@ -10,9 +10,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     @State private var selection: Tab = .homePage
-
+    @State private var user: User = User(name: "Gojo Satoru", emailAddress: "gojo@example.com", phoneNumber: "081123456789", picture: "Satoru Gojo")
     
     enum Tab {
         case homePage
@@ -21,9 +20,9 @@ struct ContentView: View {
     }
 
     var body: some View {
-        NavigationView{
+        NavigationView {
             TabView(selection: $selection) {
-                HomePage()
+                HomePage(user: $user)
                     .tabItem {
                         Label("Home", systemImage: "house")
                     }
@@ -34,7 +33,6 @@ struct ContentView: View {
                         Label("Add Trip", systemImage: "plus")
                     }
                     .tag(Tab.formPage)
-
                
                 TripPage()
                     .tabItem {
@@ -44,11 +42,12 @@ struct ContentView: View {
             }
         }
     }
-        
 }
 
 #Preview {
     ContentView()
 }
+
+
 
 

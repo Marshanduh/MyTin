@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct TopBar: View {
+    @State private var user: User
+
+    init(user: User) {
+        self._user = State(initialValue: user)
+    }
+
     var body: some View {
         VStack(spacing: 20){
-            NavigationLink(destination: ProfileView()) {
+
+            NavigationLink(destination: ProfileView(user: $user)) {
                 HStack{
-                    CircleImage(image: Image("Satoru Gojo"))
+                    CircleImage(image: Image(user.picture))
                     VStack(alignment: .leading){
-                        Text("Gojo Satoru")
+                        Text(user.name)
                             .font(.subheadline)
                             .foregroundColor(.black)
                         Text(getGreeting())
@@ -37,7 +44,7 @@ struct TopBar: View {
 }
 
 #Preview {
-    TopBar()
+    TopBar(user: User(name: "owenn", emailAddress: "owen@gmail.com", phoneNumber: "08112345678987", picture: "Satoru Gojo"))
 }
 
 //real time function to greet the user
@@ -57,3 +64,4 @@ func getGreeting() -> String {
         return "Hello"
     }
 }
+
