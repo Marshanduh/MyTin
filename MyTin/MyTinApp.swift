@@ -11,7 +11,7 @@ import SwiftUI
 struct MyTinApp: App {
     var body: some Scene {
         WindowGroup {
-            FormPage()
+            ContentView()
         }
     }
 }

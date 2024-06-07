@@ -26,6 +26,7 @@ struct ContentView: View {
                     .tabItem {
                         Label("Home", systemImage: "house")
                             .tag(Tab.homePage)
+                    }
                         
                         FormPage()
                             .tabItem {
@@ -38,7 +39,6 @@ struct ContentView: View {
                                 Label("Trip List", systemImage: "list.bullet")
                             }
                             .tag(Tab.tripPage)
-                    }
             }
         }
     }
