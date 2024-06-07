@@ -77,13 +77,25 @@ struct FormPage: View {
                 }
 
                 Section(header: Text("How Many Days")) {
-                    Stepper("Days: \(Int(volumeSliderValue))", value: $volumeSliderValue, in: 0...365, step: 1)
-                        .padding()
+                    HStack {
+                        Text("Days")
+                            .padding()
+                        
+                        TextField("", value: $volumeSliderValue, formatter: NumberFormatter())
+                            .keyboardType(.numberPad)
+                            .frame(width: 50)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .padding()
+
+
+                        Stepper(value: $volumeSliderValue, in: 0...365) {
+                            EmptyView()
+                        }
                         .accentColor(.customDarkBlue)
-                    Slider(value: $volumeSliderValue, in: 0...365, step: 1)
-                        .padding()
-                        .accentColor(.customDarkBlue)
+                    }
                 }
+
+
 
                 Button(action: {
                         // Action to perform when the confirm button is clicked
