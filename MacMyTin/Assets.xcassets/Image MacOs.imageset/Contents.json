@@ -1,11 +1,12 @@
 {
   "images" : [
     {
+      "filename" : "Group 444.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "3. Onboarding.png",
+      "filename" : "Launch App.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

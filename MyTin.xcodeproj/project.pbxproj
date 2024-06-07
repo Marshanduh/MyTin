@@ -8,7 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		04A9DDFF2C01F04900DE1CF5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9DDFE2C01F04900DE1CF5 /* ProfileView.swift */; };
-		04F044DE2C0860BE00989304 /* FormPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F044DD2C0860BE00989304 /* FormPage.swift */; };
+		04ACBF532C08372300AD9E31 /* ProfileEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACBF522C08372300AD9E31 /* ProfileEdit.swift */; };
+		04ACBF562C0CB14600AD9E31 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACBF552C0CB14600AD9E31 /* Profile.swift */; };
+		04ACBF662C12B1ED00AD9E31 /* FormPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F044DD2C0860BE00989304 /* FormPage.swift */; };
+		04C443592C116309001A660D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C443582C116309001A660D /* Color.swift */; };
+		04C4435C2C1287BB001A660D /* UIImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4435B2C1287BB001A660D /* UIImagePickerController.swift */; };
+		0812AFF72C08391D00CA69DC /* PageControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0812AFF62C08391D00CA69DC /* PageControlView.swift */; };
+		08850BC42C0C0157009EE86C /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08850BC32C0C0157009EE86C /* SplashScreenView.swift */; };
+		08A3BCF52C12CD1A00575E2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A3BCF42C12CD1A00575E2D /* ContentView.swift */; };
+		08A3BCF72C12CD1C00575E2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08A3BCF62C12CD1C00575E2D /* Assets.xcassets */; };
+		08A3BCFA2C12CD1C00575E2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08A3BCF92C12CD1C00575E2D /* Preview Assets.xcassets */; };
+		08A3BCFF2C12CE0900575E2D /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68825BD2BFFA9D400C6EC1C /* Photo.swift */; };
+		08A3BD002C12CE0900575E2D /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68825B52BFFA99300C6EC1C /* Trip.swift */; };
+		08A3BD012C12CE0900575E2D /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68825BF2BFFAA0E00C6EC1C /* ModelData.swift */; };
+		08A3BD022C12CE0900575E2D /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68825B92BFFA9AF00C6EC1C /* Destination.swift */; };
+		08A3BD032C12CE0900575E2D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68825B32BFFA98000C6EC1C /* User.swift */; };
+		08A3BD042C12CE0900575E2D /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68825BB2BFFA9BB00C6EC1C /* ToDo.swift */; };
+		08A3BD052C12CE0900575E2D /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68825B72BFFA9A000C6EC1C /* Day.swift */; };
+		08A3BD062C12CE2300575E2D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9F47B2C1181850092159A /* Color.swift */; };
+		08A3BD072C12CE2300575E2D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C443582C116309001A660D /* Color.swift */; };
+		08A3BD0A2C12D09900575E2D /* LaunchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A3BD092C12D09900575E2D /* LaunchApp.swift */; };
+		08A3BD0C2C12D0B900575E2D /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A3BD0B2C12D0B900575E2D /* Homepage.swift */; };
+		08A3BD0E2C12D0D000575E2D /* Trips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A3BD0D2C12D0D000575E2D /* Trips.swift */; };
+		08A3BD102C12D0DF00575E2D /* AddNewTrips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A3BD0F2C12D0DF00575E2D /* AddNewTrips.swift */; };
+		08A3BD132C12D12800575E2D /* MacProfileEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A3BD122C12D12800575E2D /* MacProfileEdit.swift */; };
+		08A3BD152C12D13B00575E2D /* MacProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A3BD142C12D13B00575E2D /* MacProfile.swift */; };
+		08A3BD172C12D1DB00575E2D /* MacItineraryDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A3BD162C12D1DB00575E2D /* MacItineraryDetail.swift */; };
+		08A3BD192C12D1F000575E2D /* MacDaysDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A3BD182C12D1F000575E2D /* MacDaysDetail.swift */; };
+		08A3BD1B2C12D20600575E2D /* MacPlaceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A3BD1A2C12D20600575E2D /* MacPlaceDetail.swift */; };
+		08A3BD1E2C12D24200575E2D /* MacNavbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A3BD1D2C12D24200575E2D /* MacNavbar.swift */; };
+		08A3BD1F2C12D25100575E2D /* TripRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B610F64D2C04B67F0063486E /* TripRow.swift */; };
+		08A3BD202C12D25100575E2D /* TripPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B610F64B2C04B65A0063486E /* TripPage.swift */; };
+		08A3BD212C12D25100575E2D /* TripDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64D683D2C0F524C001CE960 /* TripDetail.swift */; };
+		08A3BD222C12D25100575E2D /* TripCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67572CE2C032FAC00233CD8 /* TripCard.swift */; };
 		08A741562C015E860053A41A /* OnboardingMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A741552C015E860053A41A /* OnboardingMainView.swift */; };
 		08A741582C015FDE0053A41A /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A741572C015FDE0053A41A /* OnboardingModel.swift */; };
 		08A7415A2C0160DA0053A41A /* OnboardingMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A741592C0160DA0053A41A /* OnboardingMainViewModel.swift */; };
@@ -47,14 +79,34 @@
 		B6D9F47C2C1181850092159A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9F47B2C1181850092159A /* Color.swift */; };
 		B6D9F47E2C11846D0092159A /* DestinationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9F47D2C11846D0092159A /* DestinationForm.swift */; };
 		B6D9F4802C1184A10092159A /* LocationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9F47F2C1184A10092159A /* LocationSearchView.swift */; };
-		B6D9F4832C1189BF0092159A /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9F4822C1189BF0092159A /* Profile.swift */; };
-		B6D9F4852C1189DC0092159A /* ProfileEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9F4842C1189DC0092159A /* ProfileEdit.swift */; };
 		B6F325622C0EAFA300E04C31 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F325612C0EAFA300E04C31 /* TopBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04A9DDFE2C01F04900DE1CF5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = SOURCE_ROOT; };
+		04A9DDFE2C01F04900DE1CF5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = MyTin/Views/profiles/ProfileView.swift; sourceTree = SOURCE_ROOT; };
+		04ACBF522C08372300AD9E31 /* ProfileEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileEdit.swift; path = MyTin/Views/profiles/ProfileEdit.swift; sourceTree = SOURCE_ROOT; };
+		04ACBF542C083AD200AD9E31 /* MyTin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyTin.entitlements; sourceTree = "<group>"; };
+		04ACBF552C0CB14600AD9E31 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Profile.swift; path = MyTin/Views/Profiles/Profile.swift; sourceTree = SOURCE_ROOT; };
+		04C443582C116309001A660D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		04C4435B2C1287BB001A660D /* UIImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIImagePickerController.swift; path = ../Forms/UIImagePickerController.swift; sourceTree = "<group>"; };
 		04F044DD2C0860BE00989304 /* FormPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPage.swift; sourceTree = "<group>"; };
+		0812AFF62C08391D00CA69DC /* PageControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlView.swift; sourceTree = "<group>"; };
+		08850BC32C0C0157009EE86C /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		08A3BCF02C12CD1A00575E2D /* MacMyTin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacMyTin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08A3BCF42C12CD1A00575E2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		08A3BCF62C12CD1C00575E2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08A3BCF92C12CD1C00575E2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		08A3BCFB2C12CD1C00575E2D /* MacMyTin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacMyTin.entitlements; sourceTree = "<group>"; };
+		08A3BD092C12D09900575E2D /* LaunchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchApp.swift; sourceTree = "<group>"; };
+		08A3BD0B2C12D0B900575E2D /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
+		08A3BD0D2C12D0D000575E2D /* Trips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trips.swift; sourceTree = "<group>"; };
+		08A3BD0F2C12D0DF00575E2D /* AddNewTrips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTrips.swift; sourceTree = "<group>"; };
+		08A3BD122C12D12800575E2D /* MacProfileEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacProfileEdit.swift; sourceTree = "<group>"; };
+		08A3BD142C12D13B00575E2D /* MacProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacProfile.swift; sourceTree = "<group>"; };
+		08A3BD162C12D1DB00575E2D /* MacItineraryDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacItineraryDetail.swift; sourceTree = "<group>"; };
+		08A3BD182C12D1F000575E2D /* MacDaysDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacDaysDetail.swift; sourceTree = "<group>"; };
+		08A3BD1A2C12D20600575E2D /* MacPlaceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacPlaceDetail.swift; sourceTree = "<group>"; };
+		08A3BD1D2C12D24200575E2D /* MacNavbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacNavbar.swift; sourceTree = "<group>"; };
 		08A741552C015E860053A41A /* OnboardingMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMainView.swift; sourceTree = "<group>"; };
 		08A741572C015FDE0053A41A /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		08A741592C0160DA0053A41A /* OnboardingMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMainViewModel.swift; sourceTree = "<group>"; };
@@ -96,12 +148,17 @@
 		B6D9F47B2C1181850092159A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		B6D9F47D2C11846D0092159A /* DestinationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationForm.swift; sourceTree = "<group>"; };
 		B6D9F47F2C1184A10092159A /* LocationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchView.swift; sourceTree = "<group>"; };
-		B6D9F4822C1189BF0092159A /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		B6D9F4842C1189DC0092159A /* ProfileEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEdit.swift; sourceTree = "<group>"; };
 		B6F325612C0EAFA300E04C31 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		08A3BCED2C12CD1A00575E2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B67AB8302BFAE3C7006F010E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -119,6 +176,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04ACBF572C11708700AD9E31 /* profiles */ = {
+			isa = PBXGroup;
+			children = (
+				04A9DDFE2C01F04900DE1CF5 /* ProfileView.swift */,
+				04ACBF522C08372300AD9E31 /* ProfileEdit.swift */,
+				04ACBF552C0CB14600AD9E31 /* Profile.swift */,
+			);
+			path = profiles;
+			sourceTree = "<group>";
+		};
+		04ACBF7D2C12BA4B00AD9E31 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		08850BBC2C0BB90D009EE86C /* ScreenLaunch */ = {
+			isa = PBXGroup;
+			children = (
+				08850BC32C0C0157009EE86C /* SplashScreenView.swift */,
+			);
+			path = ScreenLaunch;
+			sourceTree = "<group>";
+		};
+		08A3BCF12C12CD1A00575E2D /* MacMyTin */ = {
+			isa = PBXGroup;
+			children = (
+				08A3BD1C2C12D22200575E2D /* Navbar */,
+				08A3BD082C12D06D00575E2D /* Views */,
+				08A3BCF42C12CD1A00575E2D /* ContentView.swift */,
+				08A3BCF62C12CD1C00575E2D /* Assets.xcassets */,
+				08A3BCFB2C12CD1C00575E2D /* MacMyTin.entitlements */,
+				08A3BCF82C12CD1C00575E2D /* Preview Content */,
+			);
+			path = MacMyTin;
+			sourceTree = "<group>";
+		};
+		08A3BCF82C12CD1C00575E2D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				08A3BCF92C12CD1C00575E2D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		08A3BD082C12D06D00575E2D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				08A3BD092C12D09900575E2D /* LaunchApp.swift */,
+				08A3BD0B2C12D0B900575E2D /* Homepage.swift */,
+				08A3BD0D2C12D0D000575E2D /* Trips.swift */,
+				08A3BD0F2C12D0DF00575E2D /* AddNewTrips.swift */,
+				08A3BD122C12D12800575E2D /* MacProfileEdit.swift */,
+				08A3BD142C12D13B00575E2D /* MacProfile.swift */,
+				08A3BD162C12D1DB00575E2D /* MacItineraryDetail.swift */,
+				08A3BD182C12D1F000575E2D /* MacDaysDetail.swift */,
+				08A3BD1A2C12D20600575E2D /* MacPlaceDetail.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		08A3BD1C2C12D22200575E2D /* Navbar */ = {
+			isa = PBXGroup;
+			children = (
+				08A3BD1D2C12D24200575E2D /* MacNavbar.swift */,
+			);
+			path = Navbar;
+			sourceTree = "<group>";
+		};
 		08A741542C011A420053A41A /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +253,7 @@
 				08A741592C0160DA0053A41A /* OnboardingMainViewModel.swift */,
 				08A7415B2C0164EB0053A41A /* OnboardingSliderView.swift */,
 				08A7415D2C01733B0053A41A /* OnboardingItemView.swift */,
+				0812AFF62C08391D00CA69DC /* PageControlView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -134,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				04F044DD2C0860BE00989304 /* FormPage.swift */,
+				04C4435B2C1287BB001A660D /* UIImagePickerController.swift */,
 				B6D9F47D2C11846D0092159A /* DestinationForm.swift */,
 				B6D9F47F2C1184A10092159A /* LocationSearchView.swift */,
 			);
@@ -161,14 +290,11 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
-		B66D5A602C01B66800536FEF /* Profiles */ = {
+		B66D5A602C01B66800536FEF /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				04A9DDFE2C01F04900DE1CF5 /* ProfileView.swift */,
-				B6D9F4822C1189BF0092159A /* Profile.swift */,
-				B6D9F4842C1189DC0092159A /* ProfileEdit.swift */,
 			);
-			path = Profiles;
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		B67572D22C03540C00233CD8 /* Maps */ = {
@@ -187,6 +313,7 @@
 				B67AB8352BFAE3C7006F010E /* MyTin */,
 				B6A9B23C2C12F44800AA65A3 /* MacMyTin */,
 				B67AB8342BFAE3C7006F010E /* Products */,
+				04ACBF7D2C12BA4B00AD9E31 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -202,6 +329,7 @@
 		B67AB8352BFAE3C7006F010E /* MyTin */ = {
 			isa = PBXGroup;
 			children = (
+				04ACBF542C083AD200AD9E31 /* MyTin.entitlements */,
 				B67AB8362BFAE3C7006F010E /* MyTinApp.swift */,
 				B6D64B312BFB91A700E37B7E /* Views */,
 				B6D64B332BFB91BF00E37B7E /* Resources */,
@@ -259,14 +387,16 @@
 		B6D64B312BFB91A700E37B7E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				04ACBF572C11708700AD9E31 /* profiles */,
 				B67AB8382BFAE3C7006F010E /* ContentView.swift */,
 				B66D5A612C01B69E00536FEF /* HomePage.swift */,
 				B6F325612C0EAFA300E04C31 /* TopBar.swift */,
 				B6D64B322BFB91B200E37B7E /* Models */,
-				B66D5A602C01B66800536FEF /* Profiles */,
-				B66D5A5E2C01B60C00536FEF /* Trips */,
 				B68825AE2BFF98BB00C6EC1C /* Destinations */,
 				B68825AD2BFF98A900C6EC1C /* Days */,
+				B66D5A602C01B66800536FEF /* Profile */,
+				B66D5A5E2C01B60C00536FEF /* Trips */,
+				08850BBC2C0BB90D009EE86C /* ScreenLaunch */,
 				08A741542C011A420053A41A /* Onboarding */,
 				B64BCBDC2C1207A600425641 /* Form */,
 				B66D5A5F2C01B61400536FEF /* Helper */,
@@ -295,6 +425,7 @@
 			isa = PBXGroup;
 			children = (
 				B6D9F47B2C1181850092159A /* Color.swift */,
+				04C443582C116309001A660D /* Color.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -302,6 +433,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		08A3BCEF2C12CD1A00575E2D /* MacMyTin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08A3BCFE2C12CD1C00575E2D /* Build configuration list for PBXNativeTarget "MacMyTin" */;
+			buildPhases = (
+				08A3BCEC2C12CD1A00575E2D /* Sources */,
+				08A3BCED2C12CD1A00575E2D /* Frameworks */,
+				08A3BCEE2C12CD1A00575E2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacMyTin;
+			productName = MacMyTin;
+			productReference = 08A3BCF02C12CD1A00575E2D /* MacMyTin.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B67AB8322BFAE3C7006F010E /* MyTin */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B67AB8412BFAE3C8006F010E /* Build configuration list for PBXNativeTarget "MyTin" */;
@@ -343,9 +491,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1520;
+				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
+					08A3BCEF2C12CD1A00575E2D = {
+						CreatedOnToolsVersion = 15.4;
+					};
 					B67AB8322BFAE3C7006F010E = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -369,11 +520,21 @@
 			targets = (
 				B67AB8322BFAE3C7006F010E /* MyTin */,
 				B6A9B23A2C12F44800AA65A3 /* MacMyTin */,
+
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		08A3BCEE2C12CD1A00575E2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A3BCFA2C12CD1C00575E2D /* Preview Assets.xcassets in Resources */,
+				08A3BCF72C12CD1C00575E2D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B67AB8312BFAE3C7006F010E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -395,6 +556,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		08A3BCEC2C12CD1A00575E2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A3BCFF2C12CE0900575E2D /* Photo.swift in Sources */,
+				08A3BD1E2C12D24200575E2D /* MacNavbar.swift in Sources */,
+				08A3BD002C12CE0900575E2D /* Trip.swift in Sources */,
+				08A3BD0E2C12D0D000575E2D /* Trips.swift in Sources */,
+				08A3BD102C12D0DF00575E2D /* AddNewTrips.swift in Sources */,
+				08A3BD012C12CE0900575E2D /* ModelData.swift in Sources */,
+				08A3BD0C2C12D0B900575E2D /* Homepage.swift in Sources */,
+				08A3BD0A2C12D09900575E2D /* LaunchApp.swift in Sources */,
+				08A3BD022C12CE0900575E2D /* Destination.swift in Sources */,
+				08A3BD1F2C12D25100575E2D /* TripRow.swift in Sources */,
+				08A3BD202C12D25100575E2D /* TripPage.swift in Sources */,
+				08A3BD212C12D25100575E2D /* TripDetail.swift in Sources */,
+				08A3BD222C12D25100575E2D /* TripCard.swift in Sources */,
+				08A3BD032C12CE0900575E2D /* User.swift in Sources */,
+				08A3BD042C12CE0900575E2D /* ToDo.swift in Sources */,
+				08A3BD062C12CE2300575E2D /* Color.swift in Sources */,
+				08A3BD192C12D1F000575E2D /* MacDaysDetail.swift in Sources */,
+				08A3BD132C12D12800575E2D /* MacProfileEdit.swift in Sources */,
+				08A3BD072C12CE2300575E2D /* Color.swift in Sources */,
+				08A3BD172C12D1DB00575E2D /* MacItineraryDetail.swift in Sources */,
+				08A3BD1B2C12D20600575E2D /* MacPlaceDetail.swift in Sources */,
+				08A3BD152C12D13B00575E2D /* MacProfile.swift in Sources */,
+				08A3BD052C12CE0900575E2D /* Day.swift in Sources */,
+				08A3BCF52C12CD1A00575E2D /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B67AB82F2BFAE3C7006F010E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -409,20 +601,24 @@
 				08A741582C015FDE0053A41A /* OnboardingModel.swift in Sources */,
 				08A7415A2C0160DA0053A41A /* OnboardingMainViewModel.swift in Sources */,
 				B67572D42C03548100233CD8 /* UserLocationViewModel.swift in Sources */,
+				04C4435C2C1287BB001A660D /* UIImagePickerController.swift in Sources */,
 				B67572CF2C032FAC00233CD8 /* TripCard.swift in Sources */,
 				B64D683E2C0F524C001CE960 /* TripDetail.swift in Sources */,
 				B68825BC2BFFA9BB00C6EC1C /* ToDo.swift in Sources */,
-				04F044DE2C0860BE00989304 /* FormPage.swift in Sources */,
 				B67AB8392BFAE3C7006F010E /* ContentView.swift in Sources */,
 				B6F325622C0EAFA300E04C31 /* TopBar.swift in Sources */,
 				B68825BA2BFFA9AF00C6EC1C /* Destination.swift in Sources */,
+				04ACBF532C08372300AD9E31 /* ProfileEdit.swift in Sources */,
 				08A7415E2C01733B0053A41A /* OnboardingItemView.swift in Sources */,
 				04A9DDFF2C01F04900DE1CF5 /* ProfileView.swift in Sources */,
 				B64F81FD2C10AE6B005FD1F5 /* DayDetail.swift in Sources */,
 				B610F64E2C04B67F0063486E /* TripRow.swift in Sources */,
+				04ACBF562C0CB14600AD9E31 /* Profile.swift in Sources */,
+				04C443592C116309001A660D /* Color.swift in Sources */,
 				B67AB8372BFAE3C7006F010E /* MyTinApp.swift in Sources */,
 				B66D5A622C01B69E00536FEF /* HomePage.swift in Sources */,
 				B6D9F47E2C11846D0092159A /* DestinationForm.swift in Sources */,
+				08850BC42C0C0157009EE86C /* SplashScreenView.swift in Sources */,
 				08A7415C2C0164EB0053A41A /* OnboardingSliderView.swift in Sources */,
 				B6D9F4802C1184A10092159A /* LocationSearchView.swift in Sources */,
 				B69E68EB2C1139D7008F4226 /* ImagePicker.swift in Sources */,
@@ -431,11 +627,11 @@
 				B64F81FF2C10C11B005FD1F5 /* DestinationDetail.swift in Sources */,
 				B63502362C12BA68001E2F74 /* TripMapView.swift in Sources */,
 				B64F81F92C108575005FD1F5 /* TestDropDown.swift in Sources */,
-				B6D9F4852C1189DC0092159A /* ProfileEdit.swift in Sources */,
-				B6D9F4832C1189BF0092159A /* Profile.swift in Sources */,
+				04ACBF662C12B1ED00AD9E31 /* FormPage.swift in Sources */,
 				08A741562C015E860053A41A /* OnboardingMainView.swift in Sources */,
 				B66D5A6A2C01C79900536FEF /* BottomRoundedCorners.swift in Sources */,
 				B68825B42BFFA98000C6EC1C /* User.swift in Sources */,
+				0812AFF72C08391D00CA69DC /* PageControlView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +647,60 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		08A3BCFC2C12CD1C00575E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacMyTin/MacMyTin.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MacMyTin/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.MacMyTin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		08A3BCFD2C12CD1C00575E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacMyTin/MacMyTin.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MacMyTin/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.MacMyTin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		B67AB83F2BFAE3C8006F010E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -575,9 +825,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyTin/MyTin.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyTin/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to show it on the map";
@@ -593,6 +846,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-sampleCode.MyTin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -604,9 +858,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyTin/MyTin.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyTin/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to show it on the map";
@@ -622,6 +879,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-sampleCode.MyTin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -685,6 +943,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		08A3BCFE2C12CD1C00575E2D /* Build configuration list for PBXNativeTarget "MacMyTin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08A3BCFC2C12CD1C00575E2D /* Debug */,
+				08A3BCFD2C12CD1C00575E2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B67AB82E2BFAE3C7006F010E /* Build configuration list for PBXProject "MyTin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

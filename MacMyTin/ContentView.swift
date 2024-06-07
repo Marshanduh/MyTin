@@ -3,6 +3,7 @@
 //  MacMyTin
 //
 //  Created by Marshanda Gwie on 07/06/24.
+//  Created by Sophia Madlentsy Tambunan on 6/7/24.
 //
 
 import SwiftUI

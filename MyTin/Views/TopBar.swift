@@ -16,7 +16,7 @@ struct TopBar: View {
 
     var body: some View {
         VStack(spacing: 20){
-            NavigationLink(destination: ProfileView(user: $user)) {
+            NavigationLink(destination: ProfileView()) {
                 HStack{
                     CircleImage(image: Image(user.picture))
                     VStack(alignment: .leading){
