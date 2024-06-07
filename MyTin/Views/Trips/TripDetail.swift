@@ -13,6 +13,9 @@ struct TripDetail: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
+//                TripMapView(trip: trip)
+//                    .frame(height: 350)
+                
                 UserLocation()
                     .frame(height: 350)
                 
@@ -84,7 +87,7 @@ struct TripDetail: View {
         image: UIImage(named: "Tokyo"),
         tripLocation: "Tokyo, Japan",
         totalDays: 7,
-        tripMap: "35.6762, 139.6503",
+        tripMap: "35.5042962, 138.4505358",
         tripCreated: Date(),
         arrivalTime: Date(),
         tripStatus: .completed,

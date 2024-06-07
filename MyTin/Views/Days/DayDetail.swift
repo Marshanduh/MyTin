@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DayDetail: View {
     var day: Day
-
+    
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
@@ -25,7 +25,7 @@ struct DayDetail: View {
                 Spacer()
             }
             Divider()
-
+            
             HStack {
                 VStack {
                     Image(systemName: "calendar")
@@ -34,14 +34,14 @@ struct DayDetail: View {
                 .foregroundColor(.gray)
                 .padding(.leading, 12)
                 .padding(.bottom)
-
+                
                 VStack(alignment: .leading) {
                     Text("Date")
                     Text("Finished")
                 }
                 .foregroundColor(.gray)
                 .padding(.bottom)
-
+                
                 VStack(alignment: .leading) {
                     Text(formattedDate(day.date))
                     Image(systemName: day.isFinished ? "checkmark.square.fill" : "square")
@@ -49,7 +49,7 @@ struct DayDetail: View {
                 .padding(.horizontal, 18)
                 .padding(.bottom)
             }
-
+            
             HStack {
                 Image(systemName: "pin")
                 Text("Destination")
@@ -60,20 +60,23 @@ struct DayDetail: View {
             }
             .padding(.leading, 16)
             .padding(.trailing, 50)
-
+            
             ForEach(day.destinations) { destination in
-                NavigationLink(destination: DestinationDetail(destination: destination)) {
+                NavigationLink(destination: DestinationDetail(destination: .constant(destination), todoList: .constant(destination.toDoList))) {
                     HStack {
                         VStack {
-                            Image(systemName: "cup.and.saucer")
+                            Image(systemName: "pin")
                         }
-
+                        
                         VStack {
                             Text(destination.name)
+                                .strikethrough(destination.isVisited)
+                                .foregroundColor(destination.isVisited ? .gray : .black)
+                            
                         }
-
+                        
                         Spacer()
-
+                        
                         Image(systemName: destination.isVisited ? "checkmark.square.fill" : "square")
                         Image(systemName: "arrow.right")
                     }
@@ -82,12 +85,12 @@ struct DayDetail: View {
                 }
                 .foregroundColor(.black)
             }
-
+            
         }
-
+        
         Spacer()
     }
-
+    
     private func formattedDate(_ date: Date) -> String {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium

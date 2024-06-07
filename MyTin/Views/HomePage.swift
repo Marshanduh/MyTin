@@ -14,6 +14,7 @@ struct HomePage: View {
     @State private var currentCity: String? = nil
     @State private var currentTrip: Trip? = nil
     
+    
     var trips: [Trip] = ModelData.trips
     
     var body: some View {
