@@ -51,7 +51,7 @@ struct OnboardingItemView: View {
                     .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: .infinity)
                     .padding()
                     .foregroundStyle(.white)
-                    .background(Color(.color1))
+//                    .background(Color(.color1))
                     .cornerRadius(10)
                     .padding(.horizontal, 16)
                     .padding(.bottom, 110)

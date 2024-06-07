@@ -81,45 +81,88 @@ struct TripDetail: View {
     }
 }
 
-#Preview {
-    let sampleTrip = Trip(
-        tripName: "Tokyo",
-        image: UIImage(named: "Tokyo"),
-        tripLocation: "Tokyo, Japan",
-        totalDays: 7,
-        tripMap: "35.5042962, 138.4505358",
-        tripCreated: Date(),
-        arrivalTime: Date(),
-        tripStatus: .completed,
-        days: [
-            Day(
-                dayNumber: 1,
-                date: Date(),
-                destinations: [
-                    Destination(
-                        name: "Shibuya Crossing",
-                        address: "Shibuya, Tokyo, Japan",
-                        toDoList: [
-                            ToDo(task: "Take a photo", isDone: true),
-                            ToDo(task: "Visit Hachiko statue", isDone: true)
-                        ],
-                        isVisited: true
-                    ),
-                    Destination(
-                        name: "Tokyo Tower",
-                        address: "4 Chome-2-8 Shibakoen, Minato City, Tokyo, Japan",
-                        toDoList: [
-                            ToDo(task: "Go to the top", isDone: false),
-                            ToDo(task: "Buy a souvenir", isDone: false)
-                        ],
-                        isVisited: false
-                    )
-                ],
-                isFinished: false
-            )
-        ]
-    )
-    return TripDetail(trip: sampleTrip)
+//#Preview {
+//    let sampleTrip = Trip(
+//        tripName: "Tokyo",
+//        image: UIImage(named: "Tokyo"),
+//        tripLocation: "Tokyo, Japan",
+//        totalDays: 7,
+//        tripMap: "35.5042962, 138.4505358",
+//        tripCreated: Date(),
+//        arrivalTime: Date(),
+//        tripStatus: .completed,
+//        days: [
+//            Day(
+//                dayNumber: 1,
+//                date: Date(),
+//                destinations: [
+//                    Destination(
+//                        name: "Shibuya Crossing",
+//                        address: "Shibuya, Tokyo, Japan",
+//                        toDoList: [
+//                            ToDo(task: "Take a photo", isDone: true),
+//                            ToDo(task: "Visit Hachiko statue", isDone: true)
+//                        ],
+//                        isVisited: true
+//                    ),
+//                    Destination(
+//                        name: "Tokyo Tower",
+//                        address: "4 Chome-2-8 Shibakoen, Minato City, Tokyo, Japan",
+//                        toDoList: [
+//                            ToDo(task: "Go to the top", isDone: false),
+//                            ToDo(task: "Buy a souvenir", isDone: false)
+//                        ],
+//                        isVisited: false
+//                    )
+//                ],
+//                isFinished: false
+//            )
+//        ]
+//    )
+//    return TripDetail(trip: sampleTrip)
+//}
+
+
+struct TripDetail_Previews: PreviewProvider {
+    static var previews: some View {
+        let sampleTrip = Trip(
+            tripName: "Tokyo",
+            image: UIImage(named: "Tokyo"),
+            tripLocation: "Tokyo, Japan",
+            totalDays: 7,
+            tripMap: "35.5042962, 138.4505358",
+            tripCreated: Date(),
+            arrivalTime: Date(),
+            tripStatus: .completed,
+            days: [
+                Day(
+                    dayNumber: 1,
+                    date: Date(),
+                    destinations: [
+                        Destination(
+                            name: "Shibuya Crossing",
+                            address: "Shibuya, Tokyo, Japan",
+                            toDoList: [
+                                ToDo(task: "Take a photo", isDone: true),
+                                ToDo(task: "Visit Hachiko statue", isDone: true)
+                            ],
+                            isVisited: true
+                        ),
+                        Destination(
+                            name: "Tokyo Tower",
+                            address: "4 Chome-2-8 Shibakoen, Minato City, Tokyo, Japan",
+                            toDoList: [
+                                ToDo(task: "Go to the top", isDone: false),
+                                ToDo(task: "Buy a souvenir", isDone: false)
+                            ],
+                            isVisited: false
+                        )
+                    ],
+                    isFinished: false
+                )
+            ]
+        )
+        
+        TripDetail(trip: sampleTrip)
+    }
 }
-
-

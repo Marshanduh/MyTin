@@ -92,20 +92,41 @@ struct DestinationDetail: View {
     }
 }
 
-#Preview {
-    DestinationDetail(
-        destination: .constant(Destination(
-            name: "Four Barrel Coffee",
-            address: "375 Valencia St, San Francisco, CA 94103",
-            toDoList: [
+//#Preview {
+//    DestinationDetail(
+//        destination: .constant(Destination(
+//            name: "Four Barrel Coffee",
+//            address: "375 Valencia St, San Francisco, CA 94103",
+//            toDoList: [
+//                ToDo(task: "Try the latte", isDone: true),
+//                ToDo(task: "Buy a bag of beans", isDone: false)
+//            ],
+//            isVisited: true
+//        )),
+//        todoList: .constant([
+//            ToDo(task: "Try the latte", isDone: true),
+//            ToDo(task: "Buy a bag of beans", isDone: false)
+//        ])
+//    )
+//}
+
+
+struct DestinationDetail_Previews: PreviewProvider {
+    static var previews: some View {
+        DestinationDetail(
+            destination: .constant(Destination(
+                name: "Four Barrel Coffee",
+                address: "375 Valencia St, San Francisco, CA 94103",
+                toDoList: [
+                    ToDo(task: "Try the latte", isDone: true),
+                    ToDo(task: "Buy a bag of beans", isDone: false)
+                ],
+                isVisited: true
+            )),
+            todoList: .constant([
                 ToDo(task: "Try the latte", isDone: true),
                 ToDo(task: "Buy a bag of beans", isDone: false)
-            ],
-            isVisited: true
-        )),
-        todoList: .constant([
-            ToDo(task: "Try the latte", isDone: true),
-            ToDo(task: "Buy a bag of beans", isDone: false)
-        ])
-    )
+            ])
+        )
+    }
 }

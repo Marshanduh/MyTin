@@ -19,11 +19,12 @@ class OnboardingMainViewModel: ObservableObject {
     func fillData(){
         onboardingData = [
 //            First On Boarding
-            OnboardingModel(image: Image(._2Onboarding), title: "Add & Manage Cards", description: "Manage your all earnings, expenses & every penny anyhere, anytime"),
+            OnboardingModel(image: Image("2.Onboarding"), title: "Add & Manage Cards", description: "Manage all your earnings, expenses & every penny anywhere, anytime"),
 //            Second On Boarding
-            OnboardingModel(image: Image(._3Onboarding), title: "Transfer & Receive Money", description: "Manage your all earnings, expenses & every penny anyhere, anytime"),
+            OnboardingModel(image: Image("3.Onboarding"), title: "Transfer & Receive Money", description: "Manage your all earnings, expenses & every penny anywhere, anytime"),
 //            Third On Boarding
-            OnboardingModel(image: Image(._4Onboarding), title: "Pay Bills & Payments", description: "Manage your all earnings, expenses & every penny anyhere, anytime")
+            OnboardingModel(image: Image("4.Onboarding"), title: "Pay Bills & Payments", description: "Manage your all earnings, expenses & every penny anywhere, anytime")
         ]
     }
+
 }

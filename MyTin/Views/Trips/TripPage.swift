@@ -69,7 +69,12 @@ struct TripRowSection: View {
     }
 }
 
-#Preview {
-    TripPage()
-}
+//#Preview {
+//    TripPage()
+//}
 
+struct TripPage_Previews: PreviewProvider {
+    static var previews: some View {
+        TripPage()
+    }
+}

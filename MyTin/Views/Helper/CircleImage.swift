@@ -24,7 +24,12 @@ struct CircleImage: View {
     }
 }
 
-#Preview {
-    CircleImage(image: Image("Satoru Gojo"))
-}
+//#Preview {
+//    CircleImage(image: Image("Satoru Gojo"))
+//}
 
+struct CircleImage_Preview: PreviewProvider {
+    static var previews: some View {
+        CircleImage(image: Image("Satoru Gojo"))
+    }
+}

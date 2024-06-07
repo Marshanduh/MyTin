@@ -25,9 +25,16 @@ struct UserLocation: View {
     }
 }
 
-#Preview {
-    UserLocation()
+//#Preview {
+//    UserLocation()
+//}
+
+struct UserLocation_Preview: PreviewProvider {
+    static var previews: some View {
+        UserLocation()
+    }
 }
+
 
 // pindah function viewModel ke file baru (refactor)
 //final class UserLocationViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {

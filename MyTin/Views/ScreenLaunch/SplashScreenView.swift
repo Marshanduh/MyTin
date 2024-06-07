@@ -1,10 +1,3 @@
-//
-//  SplashScreenView.swift
-//  MyTin
-//
-//  Created by Sophia Madlentsy Tambunan on 6/2/24.
-//
-
 import SwiftUI
 
 struct SplashScreenView: View {
@@ -16,43 +9,40 @@ struct SplashScreenView: View {
         ZStack {
             if isActive {
                 OnboardingMainView()
-//                make smooth
                     .transition(.move(edge: .trailing))
-            }else{
+            } else {
                 VStack {
-                    VStack{
+                    VStack {
                         Image("Logo")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 300, height: 300)
-                            .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                         
-                        ZStack{
+                        ZStack {
                             Text("MyTin")
-                                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                                .foregroundColor(.colorPallete)
+                                .font(.title)
+                                .foregroundColor(Color("ColorPalette")) // Make sure "ColorPalette" is defined in your assets
                                 .fontWeight(.bold)
                         }
                     }
                     .scaleEffect(size)
                     .opacity(opacity)
-                    .onAppear{
-                        withAnimation(.easeIn(duration: 1.5)){
+                    .onAppear {
+                        withAnimation(.easeIn(duration: 1.5)) {
                             self.size = 0.9
                             self.opacity = 1.0
                         }
                     }
                 }
-                .onAppear{
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.5){
-                        withAnimation {
+                .onAppear {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                        withAnimation(.easeInOut(duration: 0.8)) {
                             self.isActive = true
                         }
                     }
                 }
             }
         }
-        .animation(.snappy(duration: 0.8), value: isActive)
     }
 }
 

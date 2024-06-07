@@ -30,6 +30,12 @@ struct OnboardingMainView: View {
 
 
 
-#Preview {
-    OnboardingMainView()
+//#Preview {
+//    OnboardingMainView()
+//}
+
+struct OnboardingMainView_Preview: PreviewProvider {
+    static var previews: some View {
+        OnboardingMainView()
+    }
 }

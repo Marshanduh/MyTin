@@ -40,32 +40,61 @@ struct DayBoard: View {
     }
 }
 
-#Preview {
-    DayBoard(day: Day(
-        dayNumber: 1,
-        date: Date(),
-        destinations: [
-            Destination(
-                name: "Shibuya Crossing",
-                address: "Shibuya, Tokyo, Japan",
-                toDoList: [
-                    ToDo(task: "Take a photo", isDone: true),
-                    ToDo(task: "Visit Hachiko statue", isDone: true)
-                ],
-                isVisited: true
-            ),
-            Destination(
-                name: "Tokyo Tower",
-                address: "4 Chome-2-8 Shibakoen, Minato City, Tokyo, Japan",
-                toDoList: [
-                    ToDo(task: "Go to the top", isDone: false),
-                    ToDo(task: "Buy a souvenir", isDone: false)
-                ],
-                isVisited: false
-            )
-        ],
-        isFinished: false
-    ))
+//#Preview {
+//    DayBoard(day: Day(
+//        dayNumber: 1,
+//        date: Date(),
+//        destinations: [
+//            Destination(
+//                name: "Shibuya Crossing",
+//                address: "Shibuya, Tokyo, Japan",
+//                toDoList: [
+//                    ToDo(task: "Take a photo", isDone: true),
+//                    ToDo(task: "Visit Hachiko statue", isDone: true)
+//                ],
+//                isVisited: true
+//            ),
+//            Destination(
+//                name: "Tokyo Tower",
+//                address: "4 Chome-2-8 Shibakoen, Minato City, Tokyo, Japan",
+//                toDoList: [
+//                    ToDo(task: "Go to the top", isDone: false),
+//                    ToDo(task: "Buy a souvenir", isDone: false)
+//                ],
+//                isVisited: false
+//            )
+//        ],
+//        isFinished: false
+//    ))
+//}
+
+
+struct DayBoard_Previews: PreviewProvider {
+    static var previews: some View {
+        DayBoard(day: Day(
+            dayNumber: 1,
+            date: Date(),
+            destinations: [
+                Destination(
+                    name: "Shibuya Crossing",
+                    address: "Shibuya, Tokyo, Japan",
+                    toDoList: [
+                        ToDo(task: "Take a photo", isDone: true),
+                        ToDo(task: "Visit Hachiko statue", isDone: true)
+                    ],
+                    isVisited: true
+                ),
+                Destination(
+                    name: "Tokyo Tower",
+                    address: "4 Chome-2-8 Shibakoen, Minato City, Tokyo, Japan",
+                    toDoList: [
+                        ToDo(task: "Go to the top", isDone: false),
+                        ToDo(task: "Buy a souvenir", isDone: false)
+                    ],
+                    isVisited: false
+                )
+            ],
+            isFinished: false
+        ))
+    }
 }
-
-

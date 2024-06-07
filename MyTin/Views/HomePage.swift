@@ -130,6 +130,13 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     }
 }
 
-#Preview {
-    HomePage(user: .constant(User(name: "Gojo Satoru", emailAddress: "gojo@example.com", phoneNumber: "081123456789", picture: "Satoru Gojo")))
+//#Preview {
+//    HomePage(user: .constant(User(name: "Gojo Satoru", emailAddress: "gojo@example.com", phoneNumber: "081123456789", picture: "Satoru Gojo")))
+//}
+
+struct HomePage_Previews: PreviewProvider {
+    static var previews: some View {
+        HomePage(user: .constant(User(name: "Gojo Satoru", emailAddress: "gojo@example.com", phoneNumber: "081123456789", picture: "Satoru Gojo")))
+    }
 }
+

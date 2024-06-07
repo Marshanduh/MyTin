@@ -42,8 +42,14 @@ struct TopBar: View {
     }
 }
 
-#Preview {
-    TopBar(user: User(name: "owenn", emailAddress: "owen@gmail.com", phoneNumber: "08112345678987", picture: "Satoru Gojo"))
+//#Preview {
+//    TopBar(user: User(name: "owenn", emailAddress: "owen@gmail.com", phoneNumber: "08112345678987", picture: "Satoru Gojo"))
+//}
+
+struct TopBar_Previews: PreviewProvider {
+    static var previews: some View {
+        TopBar(user: User(name: "owenn", emailAddress: "owen@gmail.com", phoneNumber: "08112345678987", picture: "Satoru Gojo"))
+    }
 }
 
 //real time function to greet the user
