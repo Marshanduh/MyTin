@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045AB10F2C1371D70078B4C6 /* FormPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045AB10E2C1371D70078B4C6 /* FormPage.swift */; };
+		045AB1112C1371F10078B4C6 /* DestinationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045AB1102C1371F10078B4C6 /* DestinationForm.swift */; };
+		045AB1132C13720B0078B4C6 /* LocationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045AB1122C13720B0078B4C6 /* LocationSearchView.swift */; };
+		045AB1152C1372280078B4C6 /* UIImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045AB1142C1372280078B4C6 /* UIImagePickerController.swift */; };
+		045AB1172C1372400078B4C6 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045AB1162C1372400078B4C6 /* Color.swift */; };
 		04A9DDFF2C01F04900DE1CF5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9DDFE2C01F04900DE1CF5 /* ProfileView.swift */; };
 		04ACBF532C08372300AD9E31 /* ProfileEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACBF522C08372300AD9E31 /* ProfileEdit.swift */; };
 		04ACBF562C0CB14600AD9E31 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACBF552C0CB14600AD9E31 /* Profile.swift */; };
@@ -76,6 +81,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		045AB10E2C1371D70078B4C6 /* FormPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPage.swift; sourceTree = "<group>"; };
+		045AB1102C1371F10078B4C6 /* DestinationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationForm.swift; sourceTree = "<group>"; };
+		045AB1122C13720B0078B4C6 /* LocationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchView.swift; sourceTree = "<group>"; };
+		045AB1142C1372280078B4C6 /* UIImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImagePickerController.swift; sourceTree = "<group>"; };
+		045AB1162C1372400078B4C6 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		04A9DDFE2C01F04900DE1CF5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = MyTin/Views/profiles/ProfileView.swift; sourceTree = SOURCE_ROOT; };
 		04ACBF522C08372300AD9E31 /* ProfileEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileEdit.swift; path = MyTin/Views/profiles/ProfileEdit.swift; sourceTree = SOURCE_ROOT; };
 		04ACBF542C083AD200AD9E31 /* MyTin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyTin.entitlements; sourceTree = "<group>"; };
@@ -218,6 +228,11 @@
 				08A3BD652C12F6D300575E2D /* MacDay'sDetail.swift */,
 				08A3BD672C12F6F000575E2D /* MacPlaceDetail.swift */,
 				08A3BD7C2C131F3E00575E2D /* TabButton.swift */,
+				045AB10E2C1371D70078B4C6 /* FormPage.swift */,
+				045AB1102C1371F10078B4C6 /* DestinationForm.swift */,
+				045AB1122C13720B0078B4C6 /* LocationSearchView.swift */,
+				045AB1142C1372280078B4C6 /* UIImagePickerController.swift */,
+				045AB1162C1372400078B4C6 /* Color.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -506,14 +521,19 @@
 				08A3BD682C12F6F000575E2D /* MacPlaceDetail.swift in Sources */,
 				08A3BD662C12F6D300575E2D /* MacDay'sDetail.swift in Sources */,
 				08A3BD4B2C12F34400575E2D /* ContentView.swift in Sources */,
+				045AB1152C1372280078B4C6 /* UIImagePickerController.swift in Sources */,
 				08A3BD7E2C13340000575E2D /* User.swift in Sources */,
+				045AB1112C1371F10078B4C6 /* DestinationForm.swift in Sources */,
 				08A3BD902C13453900575E2D /* OnboardingItemView.swift in Sources */,
+				045AB10F2C1371D70078B4C6 /* FormPage.swift in Sources */,
 				08A3BD642C12F6B200575E2D /* MacItineraryDetail.swift in Sources */,
 				08A3BD492C12F34400575E2D /* MacMyTin_exApp.swift in Sources */,
+				045AB1172C1372400078B4C6 /* Color.swift in Sources */,
 				08A3BD5A2C12F5E600575E2D /* TripsView.swift in Sources */,
 				08A3BD7D2C131F3E00575E2D /* TabButton.swift in Sources */,
 				08A3BD6B2C12F76800575E2D /* Navbar.swift in Sources */,
 				08A3BD5E2C12F62800575E2D /* MacProfile.swift in Sources */,
+				045AB1132C13720B0078B4C6 /* LocationSearchView.swift in Sources */,
 				08A3BD602C12F63C00575E2D /* MacEditProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
