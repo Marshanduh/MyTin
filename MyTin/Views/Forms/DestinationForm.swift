@@ -74,7 +74,13 @@ struct DestinationForm: View {
                         .cornerRadius(10)
                 }
             }
-            .navigationBarTitle("New Destination")
+            .frame(minWidth: 700, minHeight: 500)
+            .toolbar{
+                ToolbarItem(placement: .principal){
+                    Text("Plan a New Trip").font(.title)
+                }
+                
+            }
         }
     }
     //Kalo jadi simpan data pakai func ini
