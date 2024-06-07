@@ -111,6 +111,7 @@ struct FormPage: View {
             }
             .navigationBarTitle("Plan a New Trip")
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
     func loadImage() {
             guard let inputImage = inputImage else { return }
