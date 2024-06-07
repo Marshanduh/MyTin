@@ -1,10 +1,3 @@
-//
-//  DestinationForm.swift
-//  MyTin
-//
-//  Created by MacBook Pro on 06/06/24.
-//
-
 import SwiftUI
 import MapKit
 import CoreLocation
@@ -12,7 +5,7 @@ import CoreLocation
 struct DestinationForm: View {
     @State var placeName: String = ""
     @State var address: String = ""
-    @State var destinationType: String = "Cafe"
+    @State var destinationType: String = "Cafe" // Default value
     @State private var showingMap = false
     @State private var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: -7.250445, longitude: 112.768845),
@@ -74,20 +67,16 @@ struct DestinationForm: View {
                         .cornerRadius(10)
                 }
             }
-            .frame(minWidth: 700, minHeight: 500)
-            .toolbar{
-                ToolbarItem(placement: .principal){
-                    Text("Plan a New Trip").font(.title)
-                }
-                
-            }
+            .navigationBarTitle("New Destination")
         }
     }
-    //Kalo jadi simpan data pakai func ini
+    
     func handleSubmit() {
+        // Handle the form submission here
         print("Place Name: \(placeName)")
         print("Address: \(address)")
         print("Destination Type: \(destinationType)")
+        // Perform any further actions, such as saving the data or navigating to another view
     }
 }
 
