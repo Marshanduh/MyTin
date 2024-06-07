@@ -10,47 +10,37 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selection: Tab = .homePage
+    @State private var user: User = User(name: "Gojo Satoru", emailAddress: "gojo@example.com", phoneNumber: "081123456789", picture: "Satoru Gojo")
+    
+    enum Tab {
+        case homePage
+        case formPage
+        case tripPage
+    }
     
     var body: some View {
         NavigationView {
-            ZStack {
-                HomePage()
-                VStack {
-                    TopBar()
-                    Spacer()
-                }
-            }
-            .navigationBarHidden(true) // Sembunyikan NavigationBar default
-        }
-    }
-}
-
-struct TopBar: View {
-    var body: some View {
-        VStack(spacing: 20){
-            NavigationLink(destination: ProfileView()) {
-                HStack{
-                    CircleImage(image: Image("Satoru Gojo"))
-                    VStack(alignment: .leading){
-                        Text("Gojo Satoru")
-                            .font(.subheadline)
-                            .foregroundColor(.black)
-                        Text(getGreeting())
-                            .font(.headline)
-                            .foregroundColor(.black)
+            TabView(selection: $selection) {
+                HomePage(user: $user)
+                    .tabItem {
+                        Label("Home", systemImage: "house")
+                            .tag(Tab.homePage)
                     }
-                    Spacer()
-                    
-                }
-                .padding()
-                .padding(.top, 40)
+                        
+                        FormPage()
+                            .tabItem {
+                                Label("Add Trip", systemImage: "plus")
+                            }
+                            .tag(Tab.formPage)
+                        
+                        TripPage()
+                            .tabItem {
+                                Label("Trip List", systemImage: "list.bullet")
+                            }
+                            .tag(Tab.tripPage)
             }
-            
         }
-        .padding()
-        .background(Color(red: 202 / 255, green: 240 / 255, blue: 248 / 255))
-        .clipShape(BottomRoundedCorners(radius: 30, corners: [.bottomLeft, .bottomRight]))
-        .edgesIgnoringSafeArea(.all)
     }
 }
 
@@ -58,20 +48,6 @@ struct TopBar: View {
     ContentView()
 }
 
-//real time function to greet the user
-func getGreeting() -> String {
-    let hour = Calendar.current.component(.hour, from: Date())
-    
-    switch hour {
-    case 0..<12:
-        return "Good Morning"
-    case 12..<15:
-        return "Good Afternoon"
-    case 15..<19:
-        return "Good Evening"
-    case 19..<24:
-        return "Good Night"
-    default:
-        return "Hello"
-    }
-}
+
+
+
