@@ -41,6 +41,8 @@ struct ContentView: View {
                             .tag(Tab.tripPage)
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
+        .navigationBarBackButtonHidden(true)
     }
 }
 
