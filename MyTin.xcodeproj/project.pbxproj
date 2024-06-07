@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		04A9DDFF2C01F04900DE1CF5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9DDFE2C01F04900DE1CF5 /* ProfileView.swift */; };
+		04C443552C10DF50001A660D /* DestinationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C443542C10DF50001A660D /* DestinationForm.swift */; };
+		04C443572C11612C001A660D /* LocationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C443562C11612C001A660D /* LocationSearchView.swift */; };
+		04C443592C116309001A660D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C443582C116309001A660D /* Color.swift */; };
+		04C4435C2C1287BB001A660D /* UIImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4435B2C1287BB001A660D /* UIImagePickerController.swift */; };
 		04F044DE2C0860BE00989304 /* FormPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F044DD2C0860BE00989304 /* FormPage.swift */; };
 		08A741562C015E860053A41A /* OnboardingMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A741552C015E860053A41A /* OnboardingMainView.swift */; };
 		08A741582C015FDE0053A41A /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A741572C015FDE0053A41A /* OnboardingModel.swift */; };
@@ -49,6 +53,10 @@
 
 /* Begin PBXFileReference section */
 		04A9DDFE2C01F04900DE1CF5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = SOURCE_ROOT; };
+		04C443542C10DF50001A660D /* DestinationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationForm.swift; sourceTree = "<group>"; };
+		04C443562C11612C001A660D /* LocationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchView.swift; sourceTree = "<group>"; };
+		04C443582C116309001A660D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		04C4435B2C1287BB001A660D /* UIImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImagePickerController.swift; sourceTree = "<group>"; };
 		04F044DD2C0860BE00989304 /* FormPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPage.swift; sourceTree = "<group>"; };
 		08A741552C015E860053A41A /* OnboardingMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMainView.swift; sourceTree = "<group>"; };
 		08A741572C015FDE0053A41A /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
@@ -228,6 +236,17 @@
 			path = Albums;
 			sourceTree = "<group>";
 		};
+		B68825B22BFF993A00C6EC1C /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				04F044DD2C0860BE00989304 /* FormPage.swift */,
+				04C4435B2C1287BB001A660D /* UIImagePickerController.swift */,
+				04C443542C10DF50001A660D /* DestinationForm.swift */,
+				04C443562C11612C001A660D /* LocationSearchView.swift */,
+			);
+			path = Forms;
+			sourceTree = "<group>";
+		};
 		B6D64B312BFB91A700E37B7E /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,7 +264,6 @@
 				B68825AF2BFF98C500C6EC1C /* ToDoLists */,
 				B66D5A5F2C01B61400536FEF /* Helper */,
 				B67572D22C03540C00233CD8 /* Maps */,
-				B64F81F82C108575005FD1F5 /* TestDropDown.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -269,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				B6D9F47B2C1181850092159A /* Color.swift */,
+				04C443582C116309001A660D /* Color.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -353,17 +372,19 @@
 				08A741582C015FDE0053A41A /* OnboardingModel.swift in Sources */,
 				08A7415A2C0160DA0053A41A /* OnboardingMainViewModel.swift in Sources */,
 				B67572D42C03548100233CD8 /* UserLocationViewModel.swift in Sources */,
+				04C4435C2C1287BB001A660D /* UIImagePickerController.swift in Sources */,
 				B67572CF2C032FAC00233CD8 /* TripCard.swift in Sources */,
 				B64D683E2C0F524C001CE960 /* TripDetail.swift in Sources */,
 				B68825BC2BFFA9BB00C6EC1C /* ToDo.swift in Sources */,
 				04F044DE2C0860BE00989304 /* FormPage.swift in Sources */,
 				B67AB8392BFAE3C7006F010E /* ContentView.swift in Sources */,
-				B6F325622C0EAFA300E04C31 /* TopBar.swift in Sources */,
+				04C443552C10DF50001A660D /* DestinationForm.swift in Sources */,
 				B68825BA2BFFA9AF00C6EC1C /* Destination.swift in Sources */,
 				08A7415E2C01733B0053A41A /* OnboardingItemView.swift in Sources */,
 				04A9DDFF2C01F04900DE1CF5 /* ProfileView.swift in Sources */,
 				B64F81FD2C10AE6B005FD1F5 /* DayDetail.swift in Sources */,
 				B610F64E2C04B67F0063486E /* TripRow.swift in Sources */,
+				04C443592C116309001A660D /* Color.swift in Sources */,
 				B67AB8372BFAE3C7006F010E /* MyTinApp.swift in Sources */,
 				B66D5A622C01B69E00536FEF /* HomePage.swift in Sources */,
 				B6D9F47E2C11846D0092159A /* DestinationForm.swift in Sources */,
@@ -379,6 +400,7 @@
 				08A741562C015E860053A41A /* OnboardingMainView.swift in Sources */,
 				B66D5A6A2C01C79900536FEF /* BottomRoundedCorners.swift in Sources */,
 				B68825B42BFFA98000C6EC1C /* User.swift in Sources */,
+				04C443572C11612C001A660D /* LocationSearchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
