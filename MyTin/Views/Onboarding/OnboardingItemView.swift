@@ -45,7 +45,7 @@ struct OnboardingItemView: View {
                 Button(action: {
                     print("Navigate")
                 }, label: {
-                let color = UIColor(named: "White")
+                let color = Color ("White")
                 Text("Skip")
                     .fontWeight(.semibold)
                     .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: .infinity)

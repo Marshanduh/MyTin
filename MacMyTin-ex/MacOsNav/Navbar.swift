@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-// macOS uses 'NavigationView' differently, and 'Sidebar' is more common for navigation.
-// Here's an updated Navbar for macOS using 'Sidebar'.
 
 struct Navbar: View {
     var body: some View {
@@ -40,30 +38,3 @@ struct Navbar_Preview: PreviewProvider {
     }
 }
 
-// HomePage view modified for macOS.
-// Note: Some features like 'edgesIgnoringSafeArea' may not behave the same on macOS.
-struct HomePage: View {
-    @Binding var user: User
-    // ... rest of your code remains the same
-
-    var body: some View {
-        NavigationView {
-            ScrollView {
-                // Your ScrollView content here
-            }
-            .frame(minWidth: 700, maxWidth: .infinity, minHeight: 300, maxHeight: .infinity) // Define the size of the main content area
-            .navigationTitle("Home") // Set the title for the navigation bar
-            .toolbar {
-                // Toolbar items here if needed
-            }
-        }
-    }
-}
-
-
-// Preview for the HomePage
-struct HomePage_Preview: PreviewProvider {
-    static var previews: some View {
-        HomePage(user: .constant(User(name: "Gojo Satoru", emailAddress: "gojo@example.com", phoneNumber: "081123456789", picture: "Satoru Gojo")))
-    }
-}

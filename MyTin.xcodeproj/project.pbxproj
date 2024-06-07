@@ -33,11 +33,11 @@
 		08A3BD7E2C13340000575E2D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68825B32BFFA98000C6EC1C /* User.swift */; };
 		08A3BD802C1334B900575E2D /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68825B92BFFA9AF00C6EC1C /* Destination.swift */; };
 		08A3BD812C1334B900575E2D /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68825BB2BFFA9BB00C6EC1C /* ToDo.swift */; };
-		08A3BD822C1334B900575E2D /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68825BF2BFFAA0E00C6EC1C /* ModelData.swift */; };
 		08A3BD832C1334B900575E2D /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68825BD2BFFA9D400C6EC1C /* Photo.swift */; };
 		08A3BD842C1334B900575E2D /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68825B72BFFA9A000C6EC1C /* Day.swift */; };
-		08A3BD852C133B5700575E2D /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68825B52BFFA99300C6EC1C /* Trip.swift */; };
-		08A3BD862C133BA600575E2D /* OnboardingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7415D2C01733B0053A41A /* OnboardingItemView.swift */; };
+		08A3BD8D2C13446700575E2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B67AB83A2BFAE3C8006F010E /* Assets.xcassets */; };
+		08A3BD8F2C13452E00575E2D /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A741572C015FDE0053A41A /* OnboardingModel.swift */; };
+		08A3BD902C13453900575E2D /* OnboardingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7415D2C01733B0053A41A /* OnboardingItemView.swift */; };
 		08A741562C015E860053A41A /* OnboardingMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A741552C015E860053A41A /* OnboardingMainView.swift */; };
 		08A741582C015FDE0053A41A /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A741572C015FDE0053A41A /* OnboardingModel.swift */; };
 		08A7415A2C0160DA0053A41A /* OnboardingMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A741592C0160DA0053A41A /* OnboardingMainViewModel.swift */; };
@@ -474,6 +474,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08A3BD502C12F34600575E2D /* Preview Assets.xcassets in Resources */,
+				08A3BD8D2C13446700575E2D /* Assets.xcassets in Resources */,
 				08A3BD4D2C12F34600575E2D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,22 +495,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08A3BD852C133B5700575E2D /* Trip.swift in Sources */,
 				08A3BD802C1334B900575E2D /* Destination.swift in Sources */,
 				08A3BD812C1334B900575E2D /* ToDo.swift in Sources */,
-				08A3BD822C1334B900575E2D /* ModelData.swift in Sources */,
 				08A3BD832C1334B900575E2D /* Photo.swift in Sources */,
 				08A3BD842C1334B900575E2D /* Day.swift in Sources */,
 				08A3BD582C12F5B000575E2D /* Homepage.swift in Sources */,
 				08A3BD5C2C12F60300575E2D /* AddTripView.swift in Sources */,
 				08A3BD622C12F68700575E2D /* MacLaunchApp.swift in Sources */,
+				08A3BD8F2C13452E00575E2D /* OnboardingModel.swift in Sources */,
 				08A3BD682C12F6F000575E2D /* MacPlaceDetail.swift in Sources */,
 				08A3BD662C12F6D300575E2D /* MacDay'sDetail.swift in Sources */,
 				08A3BD4B2C12F34400575E2D /* ContentView.swift in Sources */,
 				08A3BD7E2C13340000575E2D /* User.swift in Sources */,
+				08A3BD902C13453900575E2D /* OnboardingItemView.swift in Sources */,
 				08A3BD642C12F6B200575E2D /* MacItineraryDetail.swift in Sources */,
 				08A3BD492C12F34400575E2D /* MacMyTin_exApp.swift in Sources */,
-				08A3BD862C133BA600575E2D /* OnboardingItemView.swift in Sources */,
 				08A3BD5A2C12F5E600575E2D /* TripsView.swift in Sources */,
 				08A3BD7D2C131F3E00575E2D /* TabButton.swift in Sources */,
 				08A3BD6B2C12F76800575E2D /* Navbar.swift in Sources */,
