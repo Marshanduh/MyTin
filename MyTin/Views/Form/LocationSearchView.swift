@@ -22,9 +22,10 @@ struct LocationSearchView: View {
                 let locationCoordinates = CLLocation(latitude: region.center.latitude, longitude: region.center.longitude)
                 geocoder.reverseGeocodeLocation(locationCoordinates) { (placemarks, error) in
                     if let placemark = placemarks?.first {
-                        let streetName = placemark.thoroughfare ?? ""
-                        let city = placemark.locality ?? ""
-                        self.address = "\(streetName), \(city)"
+                        let streetName = placemark.thoroughfare ?? "Unknown Street"
+                        let city = placemark.locality ?? "Unknown City"
+                        let country = placemark.country ?? "Unknown Country"
+                        self.address = "\(streetName), \(city), \(country)"
                     }
                 }
                 self.presentationMode.wrappedValue.dismiss()
