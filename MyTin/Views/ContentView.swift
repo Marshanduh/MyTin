@@ -5,6 +5,8 @@
 //  Created by Marshanda Gwie on 20/05/24.
 //
 
+//hahahihi
+
 import SwiftUI
 
 struct ContentView: View {
@@ -16,27 +18,27 @@ struct ContentView: View {
         case formPage
         case tripPage
     }
-
+    
     var body: some View {
         NavigationView {
             TabView(selection: $selection) {
                 HomePage(user: $user)
                     .tabItem {
                         Label("Home", systemImage: "house")
+                            .tag(Tab.homePage)
+                        
+                        FormPage()
+                            .tabItem {
+                                Label("Add Trip", systemImage: "plus")
+                            }
+                            .tag(Tab.formPage)
+                        
+                        TripPage()
+                            .tabItem {
+                                Label("Trip List", systemImage: "list.bullet")
+                            }
+                            .tag(Tab.tripPage)
                     }
-                    .tag(Tab.homePage)
-                
-                FormPage()
-                    .tabItem {
-                        Label("Add Trip", systemImage: "plus")
-                    }
-                    .tag(Tab.formPage)
-               
-                TripPage()
-                    .tabItem {
-                        Label("Trip List", systemImage: "list.bullet")
-                    }
-                    .tag(Tab.tripPage)
             }
         }
     }

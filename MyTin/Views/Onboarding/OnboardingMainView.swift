@@ -10,7 +10,7 @@ import SwiftUI
 struct OnboardingMainView: View {
     @StateObject var viewModel =
         OnboardingMainViewModel()
-    @State private var currentIndex: Int = 1
+    @State private var currentIndex: Int = 0
     
     var body: some View {
         OnboardingSliderView(index: $currentIndex){
@@ -19,17 +19,15 @@ struct OnboardingMainView: View {
             OnboardingItemView(data: data)
             }
         }
+        
         .environmentObject(viewModel)
         .onAppear(){
             viewModel.fillData()
         }
+        
     }
-//    Button(action: {
-//        
-//    }){
-//        
-//    }
 }
+
 
 
 #Preview {
