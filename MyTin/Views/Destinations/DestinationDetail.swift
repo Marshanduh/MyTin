@@ -8,12 +8,19 @@
 import SwiftUI
 
 struct DestinationDetail: View {
-    var destination: Destination
-
+    @Binding var destination: Destination
+    @Binding var todoList: [ToDo]
+    
+    let columns = [
+        GridItem(.flexible())
+    ]
+    
+    
+    
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Image(systemName: "cup.and.saucer")
+                Image(systemName: "pin")
                 Text(destination.name) // destination name
                     .font(.system(size: 26))
                     .fontWeight(.bold)
@@ -21,29 +28,30 @@ struct DestinationDetail: View {
             }
             Divider()
             
-            HStack {
-                VStack {
+            Grid {
+                GridRow {
                     Image(systemName: "pin")
-                    Image(systemName: "checkmark.square")
-                }
-                .foregroundColor(.gray)
-                .padding(.leading, 12)
-                .padding(.bottom)
-                
-                VStack(alignment: .leading) {
+                        .foregroundColor(.gray)
+                        .padding(.leading, 12)
                     Text("Address")
-                    Text("Visited")
-                }
-                .foregroundColor(.gray)
-                .padding(.bottom)
-                
-                VStack(alignment: .leading) {
+                        .foregroundColor(.gray)
                     Text(destination.address)
-                    Image(systemName: destination.isVisited ? "checkmark.square.fill" : "square")
+                        .padding(.horizontal, 18)
                 }
-                .padding(.horizontal, 18)
-                .padding(.bottom)
+                .padding(.bottom,12)
+                GridRow {
+                    Image(systemName: "checkmark.square")
+                        .foregroundColor(.gray)
+                        .padding(.leading, 12)
+                    Text("Visited")
+                        .foregroundColor(.gray)
+                    Image(systemName: destination.isVisited ? "checkmark.square.fill" : "square")
+                        .padding(.horizontal, 18)
+                }
             }
+            .padding(.bottom)
+            
+            
             
             HStack {
                 Image(systemName: "list.bullet")
@@ -56,22 +64,28 @@ struct DestinationDetail: View {
             .padding(.leading, 16)
             .padding(.trailing, 50)
             
-            ForEach(destination.toDoList) { todo in
-                HStack {
-                    VStack {
-                        Image(systemName: todo.isDone ? "checkmark.square.fill" : "square")
+            LazyVGrid(columns: columns, spacing: 20) {
+                ForEach(todoList.indices, id: \.self) { index in
+                    Button {
+                        todoList[index].isDone.toggle()
+                    } label: {
+                        HStack {
+                            Image(systemName: todoList[index].isDone ? "checkmark.square.fill" : "square")
+                                .foregroundColor(todoList[index].isDone ? .black : .gray)
+                            Text(todoList[index].task)
+                                .foregroundColor(todoList[index].isDone ? .gray : .black)
+                                    .strikethrough(todoList[index].isDone, color: .gray)
+                        }
                     }
+                    .padding(.vertical, 5)
+                    .frame(maxWidth: .infinity, alignment: .leading) // align the content to leading
                     
-                    VStack {
-                        Text(todo.task)
-                    }
-                    
-                    Spacer()
                 }
-                .padding(.leading, 40)
-                .padding(.trailing, 50)
-                .padding(.top, 2)
             }
+            .padding(.leading, 50)
+            .padding(.trailing, 16)
+            .padding(.top, 10)
+            
         }
         
         Spacer()
@@ -79,13 +93,19 @@ struct DestinationDetail: View {
 }
 
 #Preview {
-    DestinationDetail(destination: Destination(
-        name: "Four Barrel Coffee",
-        address: "375 Valencia St, San Francisco, CA 94103",
-        toDoList: [
+    DestinationDetail(
+        destination: .constant(Destination(
+            name: "Four Barrel Coffee",
+            address: "375 Valencia St, San Francisco, CA 94103",
+            toDoList: [
+                ToDo(task: "Try the latte", isDone: true),
+                ToDo(task: "Buy a bag of beans", isDone: false)
+            ],
+            isVisited: true
+        )),
+        todoList: .constant([
             ToDo(task: "Try the latte", isDone: true),
             ToDo(task: "Buy a bag of beans", isDone: false)
-        ],
-        isVisited: true
-    ))
+        ])
+    )
 }

@@ -16,6 +16,7 @@
 		08A7415E2C01733B0053A41A /* OnboardingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7415D2C01733B0053A41A /* OnboardingItemView.swift */; };
 		B610F64C2C04B65A0063486E /* TripPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B610F64B2C04B65A0063486E /* TripPage.swift */; };
 		B610F64E2C04B67F0063486E /* TripRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B610F64D2C04B67F0063486E /* TripRow.swift */; };
+		B63502362C12BA68001E2F74 /* TripMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63502352C12BA68001E2F74 /* TripMapView.swift */; };
 		B64D683E2C0F524C001CE960 /* TripDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64D683D2C0F524C001CE960 /* TripDetail.swift */; };
 		B64F81F92C108575005FD1F5 /* TestDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64F81F82C108575005FD1F5 /* TestDropDown.swift */; };
 		B64F81FB2C108C1F005FD1F5 /* DayBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64F81FA2C108C1F005FD1F5 /* DayBoard.swift */; };
@@ -57,6 +58,7 @@
 		08A7415D2C01733B0053A41A /* OnboardingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItemView.swift; sourceTree = "<group>"; };
 		B610F64B2C04B65A0063486E /* TripPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripPage.swift; sourceTree = "<group>"; };
 		B610F64D2C04B67F0063486E /* TripRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRow.swift; sourceTree = "<group>"; };
+		B63502352C12BA68001E2F74 /* TripMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripMapView.swift; sourceTree = "<group>"; };
 		B64D683D2C0F524C001CE960 /* TripDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetail.swift; sourceTree = "<group>"; };
 		B64F81F82C108575005FD1F5 /* TestDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDropDown.swift; sourceTree = "<group>"; };
 		B64F81FA2C108C1F005FD1F5 /* DayBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayBoard.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			children = (
 				B67572D02C0341A700233CD8 /* UserLocation.swift */,
 				B67572D32C03548100233CD8 /* UserLocationViewModel.swift */,
+				B63502352C12BA68001E2F74 /* TripMapView.swift */,
 			);
 			path = Maps;
 			sourceTree = "<group>";
@@ -214,20 +217,6 @@
 			path = Destinations;
 			sourceTree = "<group>";
 		};
-		B68825AF2BFF98C500C6EC1C /* ToDoLists */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ToDoLists;
-			sourceTree = "<group>";
-		};
-		B68825B12BFF990300C6EC1C /* Albums */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Albums;
-			sourceTree = "<group>";
-		};
 		B6D64B312BFB91A700E37B7E /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,8 +230,6 @@
 				B68825AD2BFF98A900C6EC1C /* Days */,
 				08A741542C011A420053A41A /* Onboarding */,
 				B64BCBDC2C1207A600425641 /* Form */,
-				B68825B12BFF990300C6EC1C /* Albums */,
-				B68825AF2BFF98C500C6EC1C /* ToDoLists */,
 				B66D5A5F2C01B61400536FEF /* Helper */,
 				B67572D22C03540C00233CD8 /* Maps */,
 				B64F81F82C108575005FD1F5 /* TestDropDown.swift */,
@@ -373,6 +360,7 @@
 				B67572D12C0341A700233CD8 /* UserLocation.swift in Sources */,
 				B68825B82BFFA9A000C6EC1C /* Day.swift in Sources */,
 				B64F81FF2C10C11B005FD1F5 /* DestinationDetail.swift in Sources */,
+				B63502362C12BA68001E2F74 /* TripMapView.swift in Sources */,
 				B64F81F92C108575005FD1F5 /* TestDropDown.swift in Sources */,
 				B6D9F4852C1189DC0092159A /* ProfileEdit.swift in Sources */,
 				B6D9F4832C1189BF0092159A /* Profile.swift in Sources */,

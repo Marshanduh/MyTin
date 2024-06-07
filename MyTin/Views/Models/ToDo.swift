@@ -12,4 +12,8 @@ struct ToDo: Identifiable {
     var id = UUID()
     var task: String
     var isDone: Bool
+    
+    mutating func toggleDone() {
+        isDone.toggle()
+    }
 }

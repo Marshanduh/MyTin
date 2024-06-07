@@ -14,4 +14,8 @@ struct Destination: Identifiable {
     var address: String
     var toDoList: [ToDo]
     var isVisited: Bool
+    
+    mutating func toggleVisited() {
+        isVisited.toggle()
+    }
 }
