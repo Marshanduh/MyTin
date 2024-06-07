@@ -10,6 +10,8 @@
 		04A9DDFF2C01F04900DE1CF5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9DDFE2C01F04900DE1CF5 /* ProfileView.swift */; };
 		04ACBF532C08372300AD9E31 /* ProfileEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACBF522C08372300AD9E31 /* ProfileEdit.swift */; };
 		04ACBF562C0CB14600AD9E31 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACBF552C0CB14600AD9E31 /* Profile.swift */; };
+		0812AFF72C08391D00CA69DC /* PageControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0812AFF62C08391D00CA69DC /* PageControlView.swift */; };
+		08850BC42C0C0157009EE86C /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08850BC32C0C0157009EE86C /* SplashScreenView.swift */; };
 		08A741562C015E860053A41A /* OnboardingMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A741552C015E860053A41A /* OnboardingMainView.swift */; };
 		08A741582C015FDE0053A41A /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A741572C015FDE0053A41A /* OnboardingModel.swift */; };
 		08A7415A2C0160DA0053A41A /* OnboardingMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A741592C0160DA0053A41A /* OnboardingMainViewModel.swift */; };
@@ -42,6 +44,8 @@
 		04ACBF542C083AD200AD9E31 /* MyTin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyTin.entitlements; sourceTree = "<group>"; };
 		04ACBF552C0CB14600AD9E31 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Profile.swift; path = MyTin/Views/profiles/Profile.swift; sourceTree = SOURCE_ROOT; };
 		04F044DD2C0860BE00989304 /* FormPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPage.swift; sourceTree = "<group>"; };
+		0812AFF62C08391D00CA69DC /* PageControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlView.swift; sourceTree = "<group>"; };
+		08850BC32C0C0157009EE86C /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		08A741552C015E860053A41A /* OnboardingMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMainView.swift; sourceTree = "<group>"; };
 		08A741572C015FDE0053A41A /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		08A741592C0160DA0053A41A /* OnboardingMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMainViewModel.swift; sourceTree = "<group>"; };
@@ -88,6 +92,14 @@
 				04ACBF552C0CB14600AD9E31 /* Profile.swift */,
 			);
 			path = profiles;
+               sourceTree = "<group>";
+        };
+		08850BBC2C0BB90D009EE86C /* ScreenLaunch */ = {
+			isa = PBXGroup;
+			children = (
+				08850BC32C0C0157009EE86C /* SplashScreenView.swift */,
+			);
+			path = ScreenLaunch;
 			sourceTree = "<group>";
 		};
 		08A741542C011A420053A41A /* Onboarding */ = {
@@ -97,6 +109,7 @@
 				08A741592C0160DA0053A41A /* OnboardingMainViewModel.swift */,
 				08A7415B2C0164EB0053A41A /* OnboardingSliderView.swift */,
 				08A7415D2C01733B0053A41A /* OnboardingItemView.swift */,
+				0812AFF62C08391D00CA69DC /* PageControlView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -217,6 +230,7 @@
 				B66D5A612C01B69E00536FEF /* HomePage.swift */,
 				B66D5A602C01B66800536FEF /* Profile */,
 				B66D5A5E2C01B60C00536FEF /* Trips */,
+				08850BBC2C0BB90D009EE86C /* ScreenLaunch */,
 				08A741542C011A420053A41A /* Onboarding */,
 				B68825B22BFF993A00C6EC1C /* Forms */,
 				B68825B12BFF990300C6EC1C /* Albums */,
@@ -341,12 +355,14 @@
 				04ACBF562C0CB14600AD9E31 /* Profile.swift in Sources */,
 				B67AB8372BFAE3C7006F010E /* MyTinApp.swift in Sources */,
 				B66D5A622C01B69E00536FEF /* HomePage.swift in Sources */,
+				08850BC42C0C0157009EE86C /* SplashScreenView.swift in Sources */,
 				08A7415C2C0164EB0053A41A /* OnboardingSliderView.swift in Sources */,
 				B67572D12C0341A700233CD8 /* UserLocation.swift in Sources */,
 				B68825B82BFFA9A000C6EC1C /* Day.swift in Sources */,
 				08A741562C015E860053A41A /* OnboardingMainView.swift in Sources */,
 				B66D5A6A2C01C79900536FEF /* BottomRoundedCorners.swift in Sources */,
 				B68825B42BFFA98000C6EC1C /* User.swift in Sources */,
+				0812AFF72C08391D00CA69DC /* PageControlView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
