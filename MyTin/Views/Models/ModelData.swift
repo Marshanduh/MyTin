@@ -82,7 +82,7 @@ struct ModelData {
             tripMap: "37.7749, -122.4194",
             tripCreated: Date(),
             arrivalTime: Date(),
-            tripStatus: .onGoing,
+            tripStatus: .future,
             days: [
                 Day(
                     dayNumber: 1,

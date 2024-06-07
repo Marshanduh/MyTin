@@ -19,7 +19,7 @@ struct TripDetail: View {
                 UserLocation()
                     .frame(height: 350)
                 
-                Text("🇺🇸 \(trip.tripName)") // Display trip name
+                Text("\(trip.tripName)") // Display trip name
                     .font(.title)
                     .fontWeight(.bold)
                     .padding(.horizontal, 12)

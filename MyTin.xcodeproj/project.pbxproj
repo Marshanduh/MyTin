@@ -40,6 +40,10 @@
 		B68825BE2BFFA9D400C6EC1C /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68825BD2BFFA9D400C6EC1C /* Photo.swift */; };
 		B68825C02BFFAA0E00C6EC1C /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68825BF2BFFAA0E00C6EC1C /* ModelData.swift */; };
 		B69E68EB2C1139D7008F4226 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69E68EA2C1139D7008F4226 /* ImagePicker.swift */; };
+		B6A9B23E2C12F44800AA65A3 /* MacMyTinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A9B23D2C12F44800AA65A3 /* MacMyTinApp.swift */; };
+		B6A9B2402C12F44800AA65A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A9B23F2C12F44800AA65A3 /* ContentView.swift */; };
+		B6A9B2422C12F44A00AA65A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6A9B2412C12F44A00AA65A3 /* Assets.xcassets */; };
+		B6A9B2452C12F44A00AA65A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6A9B2442C12F44A00AA65A3 /* Preview Assets.xcassets */; };
 		B6D9F47C2C1181850092159A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9F47B2C1181850092159A /* Color.swift */; };
 		B6D9F47E2C11846D0092159A /* DestinationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9F47D2C11846D0092159A /* DestinationForm.swift */; };
 		B6D9F4802C1184A10092159A /* LocationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9F47F2C1184A10092159A /* LocationSearchView.swift */; };
@@ -83,6 +87,12 @@
 		B68825BD2BFFA9D400C6EC1C /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		B68825BF2BFFAA0E00C6EC1C /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		B69E68EA2C1139D7008F4226 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		B6A9B23B2C12F44800AA65A3 /* MacMyTin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacMyTin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6A9B23D2C12F44800AA65A3 /* MacMyTinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacMyTinApp.swift; sourceTree = "<group>"; };
+		B6A9B23F2C12F44800AA65A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B6A9B2412C12F44A00AA65A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6A9B2442C12F44A00AA65A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B6A9B2462C12F44A00AA65A3 /* MacMyTin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacMyTin.entitlements; sourceTree = "<group>"; };
 		B6D9F47B2C1181850092159A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		B6D9F47D2C11846D0092159A /* DestinationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationForm.swift; sourceTree = "<group>"; };
 		B6D9F47F2C1184A10092159A /* LocationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchView.swift; sourceTree = "<group>"; };
@@ -93,6 +103,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		B67AB8302BFAE3C7006F010E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A9B2382C12F44800AA65A3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -168,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				B67AB8352BFAE3C7006F010E /* MyTin */,
+				B6A9B23C2C12F44800AA65A3 /* MacMyTin */,
 				B67AB8342BFAE3C7006F010E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -176,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				B67AB8332BFAE3C7006F010E /* MyTin.app */,
+				B6A9B23B2C12F44800AA65A3 /* MacMyTin.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -215,6 +234,26 @@
 				B64F81FE2C10C11B005FD1F5 /* DestinationDetail.swift */,
 			);
 			path = Destinations;
+			sourceTree = "<group>";
+		};
+		B6A9B23C2C12F44800AA65A3 /* MacMyTin */ = {
+			isa = PBXGroup;
+			children = (
+				B6A9B23D2C12F44800AA65A3 /* MacMyTinApp.swift */,
+				B6A9B23F2C12F44800AA65A3 /* ContentView.swift */,
+				B6A9B2412C12F44A00AA65A3 /* Assets.xcassets */,
+				B6A9B2462C12F44A00AA65A3 /* MacMyTin.entitlements */,
+				B6A9B2432C12F44A00AA65A3 /* Preview Content */,
+			);
+			path = MacMyTin;
+			sourceTree = "<group>";
+		};
+		B6A9B2432C12F44A00AA65A3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B6A9B2442C12F44A00AA65A3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		B6D64B312BFB91A700E37B7E /* Views */ = {
@@ -280,6 +319,23 @@
 			productReference = B67AB8332BFAE3C7006F010E /* MyTin.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B6A9B23A2C12F44800AA65A3 /* MacMyTin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6A9B2492C12F44A00AA65A3 /* Build configuration list for PBXNativeTarget "MacMyTin" */;
+			buildPhases = (
+				B6A9B2372C12F44800AA65A3 /* Sources */,
+				B6A9B2382C12F44800AA65A3 /* Frameworks */,
+				B6A9B2392C12F44800AA65A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacMyTin;
+			productName = MacMyTin;
+			productReference = B6A9B23B2C12F44800AA65A3 /* MacMyTin.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -291,6 +347,9 @@
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					B67AB8322BFAE3C7006F010E = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					B6A9B23A2C12F44800AA65A3 = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
@@ -309,6 +368,7 @@
 			projectRoot = "";
 			targets = (
 				B67AB8322BFAE3C7006F010E /* MyTin */,
+				B6A9B23A2C12F44800AA65A3 /* MacMyTin */,
 			);
 		};
 /* End PBXProject section */
@@ -320,6 +380,15 @@
 			files = (
 				B67AB83E2BFAE3C8006F010E /* Preview Assets.xcassets in Resources */,
 				B67AB83B2BFAE3C8006F010E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A9B2392C12F44800AA65A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A9B2452C12F44A00AA65A3 /* Preview Assets.xcassets in Resources */,
+				B6A9B2422C12F44A00AA65A3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +436,15 @@
 				08A741562C015E860053A41A /* OnboardingMainView.swift in Sources */,
 				B66D5A6A2C01C79900536FEF /* BottomRoundedCorners.swift in Sources */,
 				B68825B42BFFA98000C6EC1C /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A9B2372C12F44800AA65A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A9B2402C12F44800AA65A3 /* ContentView.swift in Sources */,
+				B6A9B23E2C12F44800AA65A3 /* MacMyTinApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +628,60 @@
 			};
 			name = Release;
 		};
+		B6A9B2472C12F44A00AA65A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacMyTin/MacMyTin.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MacMyTin/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-sampleCode.MacMyTin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B6A9B2482C12F44A00AA65A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacMyTin/MacMyTin.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MacMyTin/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-sampleCode.MacMyTin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -567,6 +699,15 @@
 			buildConfigurations = (
 				B67AB8422BFAE3C8006F010E /* Debug */,
 				B67AB8432BFAE3C8006F010E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6A9B2492C12F44A00AA65A3 /* Build configuration list for PBXNativeTarget "MacMyTin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6A9B2472C12F44A00AA65A3 /* Debug */,
+				B6A9B2482C12F44A00AA65A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
