@@ -12,10 +12,10 @@ import CoreLocation
 struct DestinationForm: View {
     @State var placeName: String = ""
     @State var address: String = ""
-    @State var destinationType: String = "Cafe" // Default value
+    @State var destinationType: String = "Cafe"
     @State private var showingMap = false
     @State private var region = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0),
+        center: CLLocationCoordinate2D(latitude: -7.250445, longitude: 112.768845),
         span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)
     )
     let destinationTypes = ["Cafe", "Restaurant", "Museum", "Club"]
@@ -77,13 +77,11 @@ struct DestinationForm: View {
             .navigationBarTitle("New Destination")
         }
     }
-    
+    //Kalo jadi simpan data pakai func ini
     func handleSubmit() {
-        // Handle the form submission here
         print("Place Name: \(placeName)")
         print("Address: \(address)")
         print("Destination Type: \(destinationType)")
-        // Perform any further actions, such as saving the data or navigating to another view
     }
 }
 

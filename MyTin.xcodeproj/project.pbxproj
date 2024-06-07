@@ -11,6 +11,7 @@
 		04C443552C10DF50001A660D /* DestinationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C443542C10DF50001A660D /* DestinationForm.swift */; };
 		04C443572C11612C001A660D /* LocationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C443562C11612C001A660D /* LocationSearchView.swift */; };
 		04C443592C116309001A660D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C443582C116309001A660D /* Color.swift */; };
+		04C4435C2C1287BB001A660D /* UIImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4435B2C1287BB001A660D /* UIImagePickerController.swift */; };
 		04F044DE2C0860BE00989304 /* FormPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F044DD2C0860BE00989304 /* FormPage.swift */; };
 		08A741562C015E860053A41A /* OnboardingMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A741552C015E860053A41A /* OnboardingMainView.swift */; };
 		08A741582C015FDE0053A41A /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A741572C015FDE0053A41A /* OnboardingModel.swift */; };
@@ -43,6 +44,7 @@
 		04C443542C10DF50001A660D /* DestinationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationForm.swift; sourceTree = "<group>"; };
 		04C443562C11612C001A660D /* LocationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchView.swift; sourceTree = "<group>"; };
 		04C443582C116309001A660D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		04C4435B2C1287BB001A660D /* UIImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImagePickerController.swift; sourceTree = "<group>"; };
 		04F044DD2C0860BE00989304 /* FormPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPage.swift; sourceTree = "<group>"; };
 		08A741552C015E860053A41A /* OnboardingMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMainView.swift; sourceTree = "<group>"; };
 		08A741572C015FDE0053A41A /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				04F044DD2C0860BE00989304 /* FormPage.swift */,
+				04C4435B2C1287BB001A660D /* UIImagePickerController.swift */,
 				04C443542C10DF50001A660D /* DestinationForm.swift */,
 				04C443562C11612C001A660D /* LocationSearchView.swift */,
 			);
@@ -324,6 +327,7 @@
 				08A741582C015FDE0053A41A /* OnboardingModel.swift in Sources */,
 				08A7415A2C0160DA0053A41A /* OnboardingMainViewModel.swift in Sources */,
 				B67572D42C03548100233CD8 /* UserLocationViewModel.swift in Sources */,
+				04C4435C2C1287BB001A660D /* UIImagePickerController.swift in Sources */,
 				B67572CF2C032FAC00233CD8 /* TripCard.swift in Sources */,
 				B68825BC2BFFA9BB00C6EC1C /* ToDo.swift in Sources */,
 				04F044DE2C0860BE00989304 /* FormPage.swift in Sources */,
