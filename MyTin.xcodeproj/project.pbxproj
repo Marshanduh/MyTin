@@ -52,6 +52,19 @@
 		B6F325622C0EAFA300E04C31 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F325612C0EAFA300E04C31 /* TopBar.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		93594A222C131F89008C161A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		04A9DDFE2C01F04900DE1CF5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = MyTin/Views/profiles/ProfileView.swift; sourceTree = SOURCE_ROOT; };
 		04ACBF522C08372300AD9E31 /* ProfileEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileEdit.swift; path = MyTin/Views/profiles/ProfileEdit.swift; sourceTree = SOURCE_ROOT; };
@@ -67,6 +80,7 @@
 		08A741592C0160DA0053A41A /* OnboardingMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMainViewModel.swift; sourceTree = "<group>"; };
 		08A7415B2C0164EB0053A41A /* OnboardingSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSliderView.swift; sourceTree = "<group>"; };
 		08A7415D2C01733B0053A41A /* OnboardingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItemView.swift; sourceTree = "<group>"; };
+		93594A132C131F89008C161A /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 		B610F64B2C04B65A0063486E /* TripPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripPage.swift; sourceTree = "<group>"; };
 		B610F64D2C04B67F0063486E /* TripRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRow.swift; sourceTree = "<group>"; };
 		B63502352C12BA68001E2F74 /* TripMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripMapView.swift; sourceTree = "<group>"; };
@@ -148,6 +162,14 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		93594A122C131F89008C161A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93594A132C131F89008C161A /* AuthenticationServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B64BCBDC2C1207A600425641 /* Form */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				B67AB8352BFAE3C7006F010E /* MyTin */,
+				93594A122C131F89008C161A /* Frameworks */,
 				B67AB8342BFAE3C7006F010E /* Products */,
 				04ACBF7D2C12BA4B00AD9E31 /* Recovered References */,
 			);
@@ -308,6 +331,7 @@
 				B67AB82F2BFAE3C7006F010E /* Sources */,
 				B67AB8302BFAE3C7006F010E /* Frameworks */,
 				B67AB8312BFAE3C7006F010E /* Resources */,
+				93594A222C131F89008C161A /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -325,7 +349,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1520;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					B67AB8322BFAE3C7006F010E = {
@@ -537,6 +561,7 @@
 		B67AB8422BFAE3C8006F010E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MyTin/MyTin.entitlements;
@@ -553,6 +578,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -570,6 +596,7 @@
 		B67AB8432BFAE3C8006F010E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MyTin/MyTin.entitlements;
@@ -586,6 +613,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
