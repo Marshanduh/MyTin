@@ -11,14 +11,9 @@ struct ProfileEdit: View {
     @Binding var user: User
     @Binding var isEditing: Bool
     
-    
-    init(profile: Binding<User>, isEditing: Binding<Bool>) {
-        _user = profile
-        _isEditing = isEditing
-    }
     var body: some View {
         let originalProfile = User(name: user.name, emailAddress: user.emailAddress, phoneNumber: user.phoneNumber, picture: user.picture)
-        Form{
+        Form {
             Text("Your name")
             TextField("new name", text: $user.name)
                 .padding()
@@ -31,20 +26,21 @@ struct ProfileEdit: View {
             TextField("new phone", text: $user.phoneNumber)
                 .padding()
                 .border(Color.gray)
-            
         }
         .navigationBarTitle("Edit Profile", displayMode: .inline)
-        .navigationBarBackButtonHidden(false) // Hide default back button
+        .navigationBarBackButtonHidden(false)
         .navigationBarItems(
-            leading:Button(action: {
-            user = originalProfile
-            isEditing = false // Exit edit mode if needed
-        }) {
-            Image(systemName: "arrow.left")
-        }
+            leading: Button(action: {
+                user = originalProfile
+                isEditing = false
+            }) {
+                Image(systemName: "arrow.left")
+            }
         )
-        
     }
-    
-    
 }
+
+#Preview{
+    ProfileEdit(user: .constant(User(name: "owenn", emailAddress: "owen@gmail.com", phoneNumber: "08112345678987", picture: "Satoru Gojo")), isEditing: .constant(true))
+}
+
